@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8822BD5220009CE688 /* ViewExtensions.swift */; };
 		76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */; };
 		76FBC3BE22BAEA67003FE54A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BD22BAEA67003FE54A /* FirstViewController.swift */; };
 		76FBC3C022BAEA67003FE54A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BF22BAEA67003FE54A /* SecondViewController.swift */; };
 		76FBC3C322BAEA67003FE54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C122BAEA67003FE54A /* Main.storyboard */; };
 		76FBC3C522BAEA6A003FE54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C422BAEA6A003FE54A /* Assets.xcassets */; };
 		76FBC3C822BAEA6A003FE54A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C622BAEA6A003FE54A /* LaunchScreen.storyboard */; };
+		76FBC3D022BAF0B0003FE54A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3CF22BAF0B0003FE54A /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		768E4D8822BD5220009CE688 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		76FBC3B822BAEA67003FE54A /* Serendipia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FBC3BD22BAEA67003FE54A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		76FBC3C422BAEA6A003FE54A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76FBC3C722BAEA6A003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FBC3C922BAEA6A003FE54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FBC3CF22BAF0B0003FE54A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		76FBC3BA22BAEA67003FE54A /* Serendipia */ = {
 			isa = PBXGroup;
 			children = (
+				768E4D8822BD5220009CE688 /* ViewExtensions.swift */,
 				76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */,
 				76FBC3BD22BAEA67003FE54A /* FirstViewController.swift */,
 				76FBC3BF22BAEA67003FE54A /* SecondViewController.swift */,
@@ -63,6 +68,7 @@
 				76FBC3C422BAEA6A003FE54A /* Assets.xcassets */,
 				76FBC3C622BAEA6A003FE54A /* LaunchScreen.storyboard */,
 				76FBC3C922BAEA6A003FE54A /* Info.plist */,
+				76FBC3CF22BAF0B0003FE54A /* LogInViewController.swift */,
 			);
 			path = Serendipia;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				76FBC3C022BAEA67003FE54A /* SecondViewController.swift in Sources */,
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
+				76FBC3D022BAF0B0003FE54A /* LogInViewController.swift in Sources */,
+				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
 				76FBC3BE22BAEA67003FE54A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
