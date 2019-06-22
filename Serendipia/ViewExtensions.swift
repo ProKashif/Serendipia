@@ -133,3 +133,11 @@ import UIKit
 		}
 	}
 }
+
+
+extension UIViewController {
+	@IBAction func dismiss() {
+		dismiss(animated: true, completion: nil)
+	}
+	
+}

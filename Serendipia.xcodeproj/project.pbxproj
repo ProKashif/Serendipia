@@ -7,27 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7627B8A822BD64B600DD75F0 /* RegistratoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A722BD64B600DD75F0 /* RegistratoinController.swift */; };
+		7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */; };
+		7627B8AC22BD66C400DD75F0 /* NewsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */; };
+		7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */; };
+		7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */; };
+		7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */; };
 		768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8822BD5220009CE688 /* ViewExtensions.swift */; };
+		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
+		768E4D8D22BD5D17009CE688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8C22BD5D17009CE688 /* User.swift */; };
 		76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */; };
-		76FBC3BE22BAEA67003FE54A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BD22BAEA67003FE54A /* FirstViewController.swift */; };
-		76FBC3C022BAEA67003FE54A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BF22BAEA67003FE54A /* SecondViewController.swift */; };
 		76FBC3C322BAEA67003FE54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C122BAEA67003FE54A /* Main.storyboard */; };
 		76FBC3C522BAEA6A003FE54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C422BAEA6A003FE54A /* Assets.xcassets */; };
 		76FBC3C822BAEA6A003FE54A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C622BAEA6A003FE54A /* LaunchScreen.storyboard */; };
-		76FBC3D022BAF0B0003FE54A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3CF22BAF0B0003FE54A /* LogInViewController.swift */; };
+		76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3CF22BAF0B0003FE54A /* LogInController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7627B8A722BD64B600DD75F0 /* RegistratoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistratoinController.swift; sourceTree = "<group>"; };
+		7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesTabController.swift; sourceTree = "<group>"; };
+		7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTabController.swift; sourceTree = "<group>"; };
+		7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorKeyTabController.swift; sourceTree = "<group>"; };
+		7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabController.swift; sourceTree = "<group>"; };
+		7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		768E4D8822BD5220009CE688 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		768E4D8C22BD5D17009CE688 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76FBC3B822BAEA67003FE54A /* Serendipia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76FBC3BD22BAEA67003FE54A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		76FBC3BF22BAEA67003FE54A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		76FBC3C222BAEA67003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76FBC3C422BAEA6A003FE54A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76FBC3C722BAEA6A003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FBC3C922BAEA6A003FE54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76FBC3CF22BAF0B0003FE54A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		76FBC3CF22BAF0B0003FE54A /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +74,19 @@
 			children = (
 				768E4D8822BD5220009CE688 /* ViewExtensions.swift */,
 				76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */,
-				76FBC3BD22BAEA67003FE54A /* FirstViewController.swift */,
-				76FBC3BF22BAEA67003FE54A /* SecondViewController.swift */,
 				76FBC3C122BAEA67003FE54A /* Main.storyboard */,
-				76FBC3C422BAEA6A003FE54A /* Assets.xcassets */,
 				76FBC3C622BAEA6A003FE54A /* LaunchScreen.storyboard */,
+				76FBC3C422BAEA6A003FE54A /* Assets.xcassets */,
 				76FBC3C922BAEA6A003FE54A /* Info.plist */,
-				76FBC3CF22BAF0B0003FE54A /* LogInViewController.swift */,
+				76FBC3CF22BAF0B0003FE54A /* LogInController.swift */,
+				768E4D8A22BD5CE7009CE688 /* UserManager.swift */,
+				768E4D8C22BD5D17009CE688 /* User.swift */,
+				7627B8A722BD64B600DD75F0 /* RegistratoinController.swift */,
+				7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */,
+				7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */,
+				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
+				7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */,
+				7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */,
 			);
 			path = Serendipia;
 			sourceTree = "<group>";
@@ -144,11 +162,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FBC3C022BAEA67003FE54A /* SecondViewController.swift in Sources */,
+				7627B8AC22BD66C400DD75F0 /* NewsTabController.swift in Sources */,
+				7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */,
+				768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */,
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
-				76FBC3D022BAF0B0003FE54A /* LogInViewController.swift in Sources */,
+				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
 				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
-				76FBC3BE22BAEA67003FE54A /* FirstViewController.swift in Sources */,
+				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
+				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,
+				7627B8A822BD64B600DD75F0 /* RegistratoinController.swift in Sources */,
+				768E4D8D22BD5D17009CE688 /* User.swift in Sources */,
+				7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
