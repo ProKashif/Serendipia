@@ -51,7 +51,7 @@
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleTodayColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titlePlaceholderColor">
                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,9 +61,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
                                         <color key="value" red="0.95973485708236694" green="0.74038571119308472" blue="0.85926234722137451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
-                                        <color key="value" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
                                         <color key="value" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -94,6 +91,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="allowsMultipleSelection" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="fakeEventDots" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="fakeSubtitles" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="Tqy-vG-gh6" id="VYS-ac-Xu3"/>
@@ -114,9 +114,6 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="520"/>
-                    <connections>
-                        <outlet property="calendar" destination="N2F-t5-EYh" id="RcE-Kn-uV0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFM-10-Rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,6 +160,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="8rJ-Kc-sve" id="9mf-5F-Wqk"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/DD/YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3i-bK-CUx">
                                         <rect key="frame" x="25" y="141" width="152" height="30"/>
@@ -176,7 +176,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4R-wT-P6d" customClass="DesignableButton" customModule="Serendipia" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4R-wT-P6d" customClass="DesignableButton" customModule="Serendipia" customModuleProvider="target">
                                         <rect key="frame" x="20" y="188" width="314" height="44"/>
                                         <color key="backgroundColor" red="0.85486602783203125" green="0.25454637408256531" blue="0.54467779397964478" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -184,15 +184,21 @@
                                         <state key="normal" title="Search Homes">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="22"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="searchHomesTapped" destination="8rJ-Kc-sve" eventType="touchUpInside" id="lR6-qf-L72"/>
+                                        </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwv-6b-fNy">
+                                    <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwv-6b-fNy">
                                         <rect key="frame" x="20" y="252" width="314" height="1"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Hb2-wZ-LMa"/>
                                         </constraints>
@@ -280,6 +286,8 @@
                     <tabBarItem key="tabBarItem" title="Houses" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="fromDateField" destination="g3i-bK-CUx" id="XHm-Am-wgk"/>
+                        <outlet property="searchButton" destination="a4R-wT-P6d" id="IcH-3P-jM7"/>
+                        <outlet property="searchLocationField" destination="XrD-Kg-54x" id="R0Z-Iv-xDR"/>
                         <outlet property="toDateField" destination="Hdm-OP-wQ1" id="caN-VY-frz"/>
                     </connections>
                 </viewController>

@@ -14,10 +14,10 @@
 		7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */; };
 		7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */; };
 		7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */; };
-		7627B8B422BDEE4F00DD75F0 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8B322BDEE4F00DD75F0 /* CalendarController.swift */; };
 		768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8822BD5220009CE688 /* ViewExtensions.swift */; };
 		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
 		768E4D8D22BD5D17009CE688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8C22BD5D17009CE688 /* User.swift */; };
+		76C1AB6D22BE99C100F4BDE3 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */; };
 		76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */; };
 		76FBC3C322BAEA67003FE54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C122BAEA67003FE54A /* Main.storyboard */; };
 		76FBC3C522BAEA6A003FE54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C422BAEA6A003FE54A /* Assets.xcassets */; };
@@ -33,10 +33,10 @@
 		7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorKeyTabController.swift; sourceTree = "<group>"; };
 		7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabController.swift; sourceTree = "<group>"; };
 		7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		7627B8B322BDEE4F00DD75F0 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		768E4D8822BD5220009CE688 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		768E4D8C22BD5D17009CE688 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		76FBC3B822BAEA67003FE54A /* Serendipia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FBC3C222BAEA67003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
 				7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */,
 				7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */,
-				7627B8B322BDEE4F00DD75F0 /* CalendarController.swift */,
+				76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */,
 			);
 			path = Serendipia;
 			sourceTree = "<group>";
@@ -254,12 +254,12 @@
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
 				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
 				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
-				7627B8B422BDEE4F00DD75F0 /* CalendarController.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
 				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,
 				7627B8A822BD64B600DD75F0 /* RegistratoinController.swift in Sources */,
 				768E4D8D22BD5D17009CE688 /* User.swift in Sources */,
 				7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */,
+				76C1AB6D22BE99C100F4BDE3 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +409,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2X9VNR2UC;
 				INFOPLIST_FILE = Serendipia/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.martyulrich.Serendipia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -425,7 +428,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2X9VNR2UC;
 				INFOPLIST_FILE = Serendipia/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.martyulrich.Serendipia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
