@@ -20,7 +20,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="News" image="newsIcon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,7 +29,7 @@
         <!--Calendar-->
         <scene sceneID="mhO-Or-5wr">
             <objects>
-                <viewController storyboardIdentifier="calendar" modalPresentationStyle="formSheet" id="Tqy-vG-gh6" userLabel="Calendar" customClass="CalendarController" customModule="Serendipia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="calendar" modalPresentationStyle="formSheet" id="Tqy-vG-gh6" userLabel="Calendar" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XMw-Uu-7HR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="520"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,7 +283,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Houses" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Houses" image="houseIcon" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="fromDateField" destination="g3i-bK-CUx" id="XHm-Am-wgk"/>
                         <outlet property="searchButton" destination="a4R-wT-P6d" id="IcH-3P-jM7"/>
@@ -310,7 +310,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kfL-ew-ffL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Door Key" id="WCH-G8-bG0"/>
+                    <tabBarItem key="tabBarItem" title="Door Key" image="lockIcon" id="WCH-G8-bG0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6tr-wU-mL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -326,7 +326,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jcX-uC-eaB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="g6L-Pf-QTy"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profileIcon" id="g6L-Pf-QTy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPt-Y8-N6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -555,6 +555,8 @@ community</string>
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -571,5 +573,9 @@ community</string>
     <resources>
         <image name="house" width="638" height="412"/>
         <image name="houseBackground" width="375" height="667"/>
+        <image name="houseIcon" width="34" height="30"/>
+        <image name="lockIcon" width="23" height="30"/>
+        <image name="newsIcon" width="30" height="30"/>
+        <image name="profileIcon" width="26" height="30"/>
     </resources>
 </document>
