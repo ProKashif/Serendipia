@@ -26,6 +26,102 @@
             </objects>
             <point key="canvasLocation" x="-728" y="-731"/>
         </scene>
+        <!--Calendar-->
+        <scene sceneID="mhO-Or-5wr">
+            <objects>
+                <viewController storyboardIdentifier="calendar" modalPresentationStyle="formSheet" id="Tqy-vG-gh6" userLabel="Calendar" customClass="CalendarController" customModule="Serendipia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMw-Uu-7HR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="520"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="N2F-t5-EYh" customClass="FSCalendar">
+                                <rect key="frame" x="24" y="44" width="367" height="442"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="I4G-rf-50j"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleSelectionColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleTodayColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titlePlaceholderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" red="0.95973485708236694" green="0.74038571119308472" blue="0.85926234722137451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
+                                        <color key="value" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useVeryShortWeekdaySymbols" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fakedSelectedDay">
+                                        <integer key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitlePlaceholderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleWeekendColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleTodayColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleSelectionColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleDefaultColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsSelection" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsMultipleSelection" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fakeEventDots" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fakeSubtitles" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Tqy-vG-gh6" id="VYS-ac-Xu3"/>
+                                    <outlet property="delegate" destination="Tqy-vG-gh6" id="zzC-ZP-QDG"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N2F-t5-EYh" firstAttribute="leading" secondItem="Kco-yN-H8Y" secondAttribute="leading" constant="24" id="JAr-hi-aWf"/>
+                            <constraint firstItem="Kco-yN-H8Y" firstAttribute="bottom" secondItem="N2F-t5-EYh" secondAttribute="bottom" id="ed7-Zh-FNu"/>
+                            <constraint firstItem="N2F-t5-EYh" firstAttribute="top" secondItem="Kco-yN-H8Y" secondAttribute="top" id="ip5-hM-wK9"/>
+                            <constraint firstItem="Kco-yN-H8Y" firstAttribute="trailing" secondItem="N2F-t5-EYh" secondAttribute="trailing" constant="23" id="nnZ-dM-sio"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kco-yN-H8Y"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="520"/>
+                    <connections>
+                        <outlet property="calendar" destination="N2F-t5-EYh" id="RcE-Kn-uV0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HFM-10-Rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="-1454.4642857142856"/>
+        </scene>
         <!--Houses Tab-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -34,8 +130,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="houseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zXp-y3-fX3">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="houseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="zXp-y3-fX3">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5Zb-Eb-6FK" appends="YES" id="6AY-te-JaW"/>
+                                </connections>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3L-QQ-hZ5" customClass="DesignableView" customModule="Serendipia" customModuleProvider="target">
                                 <rect key="frame" x="30" y="298" width="354" height="343"/>
@@ -97,7 +197,7 @@
                                             <constraint firstAttribute="height" constant="1" id="Hb2-wZ-LMa"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to add your house to our network?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf2-f3-43k">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to add your house to our network?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bf2-f3-43k">
                                         <rect key="frame" x="48" y="269" width="258" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
@@ -113,7 +213,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Bf2-f3-43k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l3L-QQ-hZ5" secondAttribute="leading" constant="48" id="3RY-UQ-fRe"/>
+                                    <constraint firstItem="Bf2-f3-43k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l3L-QQ-hZ5" secondAttribute="leading" constant="8" id="3RY-UQ-fRe"/>
                                     <constraint firstItem="Ghj-pz-wrf" firstAttribute="leading" secondItem="l3L-QQ-hZ5" secondAttribute="leading" constant="25" id="3T2-Cn-m8V"/>
                                     <constraint firstItem="Ghj-pz-wrf" firstAttribute="top" secondItem="l3L-QQ-hZ5" secondAttribute="top" constant="20" id="5Hk-D7-d1f"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ghj-pz-wrf" secondAttribute="trailing" constant="20" symbolic="YES" id="5Sm-yw-E2c"/>
@@ -135,7 +235,7 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2RJ-pl-twE" secondAttribute="trailing" constant="20" symbolic="YES" id="WMH-kd-LWU"/>
                                     <constraint firstItem="XrD-Kg-54x" firstAttribute="leading" secondItem="l3L-QQ-hZ5" secondAttribute="leading" constant="25" id="aai-uV-VXI"/>
                                     <constraint firstItem="2RJ-pl-twE" firstAttribute="leading" secondItem="ko6-tw-QCq" secondAttribute="trailing" constant="8" symbolic="YES" id="d9c-8d-FxO"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bf2-f3-43k" secondAttribute="trailing" constant="47" id="fXy-GR-X0r"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bf2-f3-43k" secondAttribute="trailing" constant="8" id="fXy-GR-X0r"/>
                                     <constraint firstItem="g3i-bK-CUx" firstAttribute="leading" secondItem="XrD-Kg-54x" secondAttribute="leading" id="ikL-UT-tdk"/>
                                     <constraint firstItem="g3i-bK-CUx" firstAttribute="trailing" secondItem="l3L-QQ-hZ5" secondAttribute="trailing" multiplier="0.5" id="oS6-8Z-iAX"/>
                                     <constraint firstItem="Sdo-NV-5p8" firstAttribute="top" secondItem="Bf2-f3-43k" secondAttribute="bottom" constant="8" id="okt-pJ-36B"/>
@@ -178,8 +278,17 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Houses" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="fromDateField" destination="g3i-bK-CUx" id="XHm-Am-wgk"/>
+                        <outlet property="toDateField" destination="Hdm-OP-wQ1" id="caN-VY-frz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5Zb-Eb-6FK">
+                    <connections>
+                        <action selector="dismissFirstResponder:" destination="8rJ-Kc-sve" id="4Um-WM-D4N"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="118.84057971014494" y="-731.25"/>
         </scene>

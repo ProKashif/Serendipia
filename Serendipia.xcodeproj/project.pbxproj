@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7301D2E2537C9124141FE2 /* Pods_Serendipia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A432A442BCAFC4E717C19388 /* Pods_Serendipia.framework */; };
 		7627B8A822BD64B600DD75F0 /* RegistratoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A722BD64B600DD75F0 /* RegistratoinController.swift */; };
 		7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */; };
 		7627B8AC22BD66C400DD75F0 /* NewsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */; };
 		7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */; };
 		7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */; };
 		7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */; };
+		7627B8B422BDEE4F00DD75F0 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8B322BDEE4F00DD75F0 /* CalendarController.swift */; };
 		768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8822BD5220009CE688 /* ViewExtensions.swift */; };
 		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
 		768E4D8D22BD5D17009CE688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8C22BD5D17009CE688 /* User.swift */; };
@@ -24,12 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4769F3AEFB096A736B8E63F9 /* Pods-Serendipia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Serendipia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia.release.xcconfig"; sourceTree = "<group>"; };
 		7627B8A722BD64B600DD75F0 /* RegistratoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistratoinController.swift; sourceTree = "<group>"; };
 		7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesTabController.swift; sourceTree = "<group>"; };
 		7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTabController.swift; sourceTree = "<group>"; };
 		7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorKeyTabController.swift; sourceTree = "<group>"; };
 		7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabController.swift; sourceTree = "<group>"; };
 		7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		7627B8B322BDEE4F00DD75F0 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		768E4D8822BD5220009CE688 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		768E4D8C22BD5D17009CE688 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		76FBC3C722BAEA6A003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FBC3C922BAEA6A003FE54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FBC3CF22BAF0B0003FE54A /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		A432A442BCAFC4E717C19388 /* Pods_Serendipia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Serendipia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36ACE94F28A494348CAF581 /* Pods-Serendipia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Serendipia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7301D2E2537C9124141FE2 /* Pods_Serendipia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04FE917D5CB0854B2AE5110F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B36ACE94F28A494348CAF581 /* Pods-Serendipia.debug.xcconfig */,
+				4769F3AEFB096A736B8E63F9 /* Pods-Serendipia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		388D781F6E53F4CDFAFF6CE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A432A442BCAFC4E717C19388 /* Pods_Serendipia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76FBC3AF22BAEA67003FE54A = {
 			isa = PBXGroup;
 			children = (
 				76FBC3BA22BAEA67003FE54A /* Serendipia */,
 				76FBC3B922BAEA67003FE54A /* Products */,
+				04FE917D5CB0854B2AE5110F /* Pods */,
+				388D781F6E53F4CDFAFF6CE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +113,7 @@
 				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
 				7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */,
 				7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */,
+				7627B8B322BDEE4F00DD75F0 /* CalendarController.swift */,
 			);
 			path = Serendipia;
 			sourceTree = "<group>";
@@ -98,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76FBC3CC22BAEA6A003FE54A /* Build configuration list for PBXNativeTarget "Serendipia" */;
 			buildPhases = (
+				28C00DD856DF9097CA182326 /* [CP] Check Pods Manifest.lock */,
 				76FBC3B422BAEA67003FE54A /* Sources */,
 				76FBC3B522BAEA67003FE54A /* Frameworks */,
 				76FBC3B622BAEA67003FE54A /* Resources */,
+				2E7CC13B932BE99C9D3ACEBF /* [CP] Embed Pods Frameworks */,
+				D131368CC7C24418C7B0A7BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,6 +187,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28C00DD856DF9097CA182326 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Serendipia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E7CC13B932BE99C9D3ACEBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D131368CC7C24418C7B0A7BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76FBC3B422BAEA67003FE54A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -168,6 +254,7 @@
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
 				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
 				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
+				7627B8B422BDEE4F00DD75F0 /* CalendarController.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
 				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,
 				7627B8A822BD64B600DD75F0 /* RegistratoinController.swift in Sources */,
@@ -316,15 +403,13 @@
 		};
 		76FBC3CD22BAEA6A003FE54A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B36ACE94F28A494348CAF581 /* Pods-Serendipia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2X9VNR2UC;
 				INFOPLIST_FILE = Serendipia/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.martyulrich.Serendipia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -334,15 +419,13 @@
 		};
 		76FBC3CE22BAEA6A003FE54A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4769F3AEFB096A736B8E63F9 /* Pods-Serendipia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S2X9VNR2UC;
 				INFOPLIST_FILE = Serendipia/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.martyulrich.Serendipia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

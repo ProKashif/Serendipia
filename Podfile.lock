@@ -1,0 +1,15 @@
+PODS:
+  - FSCalendar (2.8.0)
+  - PureLayout (3.1.4)
+
+DEPENDENCIES:
+  - FSCalendar
+  - PureLayout
+
+SPEC CHECKSUMS:
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
+
+PODFILE CHECKSUM: 87d1c865ae74cbc4d5293da56afb32bd4492ddff
+
+COCOAPODS: 1.4.0
