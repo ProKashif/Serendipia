@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 typealias Price = Float
 
@@ -15,8 +16,9 @@ struct House {
 	let address: Address
 	let rooms: [Room]
 	let id: String
+	let title: String
+	let coordinates: CLLocationCoordinate2D
 }
-
 
 struct Address {
 	let city: String

@@ -33,7 +33,7 @@ class HouseListCell: UICollectionViewCell {
 	
 	func configure(house: House) {
 		houseId = house.id
-		DispatchQueue.main.async { [weak self] in
+		DispatchQueue.global(qos: .userInteractive).async { [weak self] in
 			if let imageData = try? Data(contentsOf: house.photoUrls[0]) {
 				if house.id == self?.houseId {
 					DispatchQueue.main.async {

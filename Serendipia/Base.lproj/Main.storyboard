@@ -159,7 +159,7 @@
                                         <rect key="frame" x="25" y="54" width="303" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="address-level2"/>
                                         <connections>
                                             <outlet property="delegate" destination="8rJ-Kc-sve" id="9mf-5F-Wqk"/>
                                         </connections>
@@ -431,8 +431,30 @@
                                             <outlet property="streetLabel" destination="Fr0-P4-gUp" id="I86-7k-elK"/>
                                         </connections>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="map" id="MFo-1U-WMH" customClass="MapViewCell" customModule="Serendipia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="500" width="414" height="380"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="380"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="knj-bG-nPb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="380"/>
+                                                </mapView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="knj-bG-nPb" firstAttribute="top" secondItem="MFo-1U-WMH" secondAttribute="top" id="FTT-Ab-Gft"/>
+                                            <constraint firstItem="knj-bG-nPb" firstAttribute="leading" secondItem="MFo-1U-WMH" secondAttribute="leading" id="WfT-nP-eLu"/>
+                                            <constraint firstAttribute="trailing" secondItem="knj-bG-nPb" secondAttribute="trailing" id="X0J-IH-oza"/>
+                                            <constraint firstAttribute="bottom" secondItem="knj-bG-nPb" secondAttribute="bottom" id="uyJ-CC-ldN"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="mapView" destination="knj-bG-nPb" id="onA-CB-VZk"/>
+                                        </connections>
+                                    </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kOF-MV-8H9">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="kOF-MV-8H9">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -456,7 +478,7 @@
                                                         <color key="titleColor" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="changeViewTapped" destination="ch3-gD-kg9" eventType="touchUpInside" id="Wef-Pf-n2v"/>
+                                                        <action selector="changeViewTappedWithSender:" destination="ch3-gD-kg9" eventType="touchUpInside" id="2t9-G3-iRr"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -522,7 +544,6 @@
                                     </constraints>
                                 </collectionReusableView>
                                 <connections>
-                                    <outlet property="dataSource" destination="ch3-gD-kg9" id="Jfe-MV-7aN"/>
                                     <outlet property="delegate" destination="ch3-gD-kg9" id="kNL-8A-sop"/>
                                 </connections>
                             </collectionView>
@@ -530,6 +551,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RgL-In-Qvz"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Xll-aC-zeV" id="ZNL-Ht-CX1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZQ-V9-Hx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

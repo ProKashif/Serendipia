@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B7301D2E2537C9124141FE2 /* Pods_Serendipia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A432A442BCAFC4E717C19388 /* Pods_Serendipia.framework */; };
+		7607AA4622BFE98600E2CC93 /* MapViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607AA4522BFE98600E2CC93 /* MapViewCell.swift */; };
 		7627B8A822BD64B600DD75F0 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A722BD64B600DD75F0 /* RegistrationController.swift */; };
 		7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */; };
 		7627B8AC22BD66C400DD75F0 /* NewsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		4769F3AEFB096A736B8E63F9 /* Pods-Serendipia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Serendipia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia.release.xcconfig"; sourceTree = "<group>"; };
+		7607AA4522BFE98600E2CC93 /* MapViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCell.swift; sourceTree = "<group>"; };
 		7627B8A722BD64B600DD75F0 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesTabController.swift; sourceTree = "<group>"; };
 		7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTabController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				7627B8A722BD64B600DD75F0 /* RegistrationController.swift */,
 				7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */,
 				76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */,
+				7607AA4522BFE98600E2CC93 /* MapViewCell.swift */,
 				76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */,
 				7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */,
 				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
@@ -270,6 +273,7 @@
 				7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */,
 				768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */,
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
+				7607AA4622BFE98600E2CC93 /* MapViewCell.swift in Sources */,
 				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
 				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
 				76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */,
