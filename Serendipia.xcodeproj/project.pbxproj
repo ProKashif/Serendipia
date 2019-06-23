@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B7301D2E2537C9124141FE2 /* Pods_Serendipia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A432A442BCAFC4E717C19388 /* Pods_Serendipia.framework */; };
-		7627B8A822BD64B600DD75F0 /* RegistratoinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A722BD64B600DD75F0 /* RegistratoinController.swift */; };
+		7627B8A822BD64B600DD75F0 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A722BD64B600DD75F0 /* RegistrationController.swift */; };
 		7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */; };
 		7627B8AC22BD66C400DD75F0 /* NewsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */; };
 		7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */; };
@@ -18,6 +18,9 @@
 		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
 		768E4D8D22BD5D17009CE688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8C22BD5D17009CE688 /* User.swift */; };
 		76C1AB6D22BE99C100F4BDE3 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */; };
+		76C1AB6F22BECCFA00F4BDE3 /* HouseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */; };
+		76C1AB7122BECD8100F4BDE3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB7022BECD8100F4BDE3 /* House.swift */; };
+		76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */; };
 		76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */; };
 		76FBC3C322BAEA67003FE54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C122BAEA67003FE54A /* Main.storyboard */; };
 		76FBC3C522BAEA6A003FE54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C422BAEA6A003FE54A /* Assets.xcassets */; };
@@ -27,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		4769F3AEFB096A736B8E63F9 /* Pods-Serendipia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Serendipia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia.release.xcconfig"; sourceTree = "<group>"; };
-		7627B8A722BD64B600DD75F0 /* RegistratoinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistratoinController.swift; sourceTree = "<group>"; };
+		7627B8A722BD64B600DD75F0 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesTabController.swift; sourceTree = "<group>"; };
 		7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTabController.swift; sourceTree = "<group>"; };
 		7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorKeyTabController.swift; sourceTree = "<group>"; };
@@ -37,6 +40,9 @@
 		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		768E4D8C22BD5D17009CE688 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListController.swift; sourceTree = "<group>"; };
+		76C1AB7022BECD8100F4BDE3 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListCell.swift; sourceTree = "<group>"; };
 		76FBC3B822BAEA67003FE54A /* Serendipia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FBC3C222BAEA67003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +83,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		76C1AB7222BECD8B00F4BDE3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				768E4D8C22BD5D17009CE688 /* User.swift */,
+				76C1AB7022BECD8100F4BDE3 /* House.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		76FBC3AF22BAEA67003FE54A = {
 			isa = PBXGroup;
 			children = (
@@ -106,9 +121,11 @@
 				76FBC3C922BAEA6A003FE54A /* Info.plist */,
 				76FBC3CF22BAF0B0003FE54A /* LogInController.swift */,
 				768E4D8A22BD5CE7009CE688 /* UserManager.swift */,
-				768E4D8C22BD5D17009CE688 /* User.swift */,
-				7627B8A722BD64B600DD75F0 /* RegistratoinController.swift */,
+				76C1AB7222BECD8B00F4BDE3 /* Models */,
+				7627B8A722BD64B600DD75F0 /* RegistrationController.swift */,
 				7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */,
+				76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */,
+				76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */,
 				7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */,
 				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
 				7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */,
@@ -248,18 +265,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C1AB7122BECD8100F4BDE3 /* House.swift in Sources */,
 				7627B8AC22BD66C400DD75F0 /* NewsTabController.swift in Sources */,
 				7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */,
 				768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */,
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
 				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
 				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
+				76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
 				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,
-				7627B8A822BD64B600DD75F0 /* RegistratoinController.swift in Sources */,
+				7627B8A822BD64B600DD75F0 /* RegistrationController.swift in Sources */,
 				768E4D8D22BD5D17009CE688 /* User.swift in Sources */,
 				7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */,
 				76C1AB6D22BE99C100F4BDE3 /* DateExtensions.swift in Sources */,
+				76C1AB6F22BECCFA00F4BDE3 /* HouseListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

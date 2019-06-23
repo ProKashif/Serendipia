@@ -77,14 +77,6 @@ class HousesTabController: UIViewController {
 			endDate != nil &&
 			searchLocationField.text != nil
 	}
-	
-	@IBAction func searchHomesTapped() {
-		if let textField = view.firstResponder as? UITextField {
-			textField.endEditing(true)
-		} else {
-			view.firstResponder?.resignFirstResponder()
-		}
-	}
 }
 
 

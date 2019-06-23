@@ -1,5 +1,5 @@
 //
-//  RegistratoinController.swift
+//  RegistrationController.swift
 //  Serendipia
 //
 //  Created by Marty Ulrich on 6/21/19.
