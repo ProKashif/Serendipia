@@ -58,8 +58,10 @@ struct Room {
 		let price: Price
 	}
 	
+	let photoUrls: [URL]
 	let rates: [Rate]
 	let roomNumber: Int
+	let name: String
 }
 
 

@@ -126,21 +126,69 @@ let testHouses: [House] = [
 		URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%22%D0%A3%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%92.%D0%9F._%D0%A1%D1%83%D0%BA%D0%B0%D1%87%D0%B5%D0%B2%D0%B0%22%2C_%D1%84%D0%B0%D1%81%D0%B0%D0%B4_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D0%B8.jpg/1920px-%22%D0%A3%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%92.%D0%9F._%D0%A1%D1%83%D0%BA%D0%B0%D1%87%D0%B5%D0%B2%D0%B0%22%2C_%D1%84%D0%B0%D1%81%D0%B0%D0%B4_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D0%B8.jpg")!,
 		URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Makedonska_street%2C_Belgrade%2C_Serbia%2C_2019._09.jpg/1920px-Makedonska_street%2C_Belgrade%2C_Serbia%2C_2019._09.jpg")!,
 		],
-		  address: Address(city: "San Francisco", houseNumber: "123", street: "Haight St"), rooms: [
-			Room(rates: [Room.Rate(date: Date(), price: 50)], roomNumber: 1)
-		], id: "1", title: "Serendipia Cooperative", coordinates: CLLocationCoordinate2D(latitude: 37.4002029, longitude: -122.4110734), amenities: [.wifi, .cleaning], description: "Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
+		  address: Address(city: "San Francisco", houseNumber: "123", street: "Haight St"),
+		  rooms: testRooms,
+		  id: "1",
+		  title: "Serendipia Cooperative",
+		  coordinates: CLLocationCoordinate2D(latitude: 37.4002029, longitude: -122.4110734),
+		  amenities: [.wifi, .cleaning],
+		  description: "Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
 	House(photoUrls: [URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Dumbrava_Rosie_11.jpg")!],
-		  address: Address(city: "Los Gatos", houseNumber: "233", street: "Booger St"), rooms: [
-			Room(rates: [Room.Rate(date: Date(), price: 40)], roomNumber: 2)
-		], id: "2", title: "JLO's House", coordinates: CLLocationCoordinate2D(latitude: 37.829, longitude: -122.4311074), amenities: [.cleaning, .snacks], description: "Boogy Boody Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
+		  address: Address(city: "Los Gatos", houseNumber: "233", street: "Booger St"),
+		  rooms: testRooms,
+		  id: "2",
+		  title: "JLO's House",
+		  coordinates: CLLocationCoordinate2D(latitude: 37.829, longitude: -122.4311074),
+		  amenities: [.cleaning, .snacks],
+		  description: "Boogy Boody Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
 	House(photoUrls: [URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%22%D0%A3%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%92.%D0%9F._%D0%A1%D1%83%D0%BA%D0%B0%D1%87%D0%B5%D0%B2%D0%B0%22%2C_%D1%84%D0%B0%D1%81%D0%B0%D0%B4_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D0%B8.jpg/1920px-%22%D0%A3%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%92.%D0%9F._%D0%A1%D1%83%D0%BA%D0%B0%D1%87%D0%B5%D0%B2%D0%B0%22%2C_%D1%84%D0%B0%D1%81%D0%B0%D0%B4_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D0%B8.jpg")!],
-		  address: Address(city: "Alameda", houseNumber: "284", street: "Ajar Ave"), rooms: [
-			Room(rates: [Room.Rate(date: Date(), price: 50)], roomNumber: 1)
-		], id: "3", title: "Serendipia Nest", coordinates: CLLocationCoordinate2D(latitude: 37.800, longitude: -122.473), amenities: [.cleaning, .snacks, .wifi], description: "Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
+		  address: Address(city: "Alameda", houseNumber: "284", street: "Ajar Ave"),
+		  rooms: testRooms,
+		  id: "3",
+		  title: "Serendipia Nest",
+		  coordinates: CLLocationCoordinate2D(latitude: 37.800, longitude: -122.473),
+		  amenities: [.cleaning, .snacks, .wifi],
+		  description: "Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
 	House(photoUrls: [URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Makedonska_street%2C_Belgrade%2C_Serbia%2C_2019._09.jpg/1920px-Makedonska_street%2C_Belgrade%2C_Serbia%2C_2019._09.jpg")!],
-		  address: Address(city: "San Francisco", houseNumber: "1243", street: "Left St"), rooms: [
-			Room(rates: [Room.Rate(date: Date(), price: 20)], roomNumber: 3)
-		], id: "4", title: "Burger King", coordinates: CLLocationCoordinate2D(latitude: 37.80029, longitude: -122.10334), amenities: [.cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .laundry], description: "Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0])
+		  address: Address(city: "San Francisco", houseNumber: "1243", street: "Left St"),
+		  rooms: testRooms,
+		  id: "4",
+		  title: "Burger King",
+		  coordinates: CLLocationCoordinate2D(latitude: 37.80029, longitude: -122.10334),
+		  amenities: [.cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .cleaning, .snacks, .wifi, .laundry],
+		  description: "Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0])
+]
+
+
+let testRooms = [
+	Room(photoUrls: [
+		URL(string: "https://s7d4.scene7.com/is/image/roomandboard/wyatt_438274_19e_g?hei=725&$str_g$")!,
+		URL(string: "https://secure.img1-fg.wfcdn.com/im/74202513/resize-h800-w800%5Ecompr-r85/4555/45554584/Valencia+5+Piece+Bedroom+Set.jpg")!,
+		URL(string: "https://s3.amazonaws.com/furniture.retailcatalog.us/products/201732/large/1700-dark-oak.jpg")!
+		], rates: [Room.Rate(date: Date(), price: 50)],
+		   roomNumber: 1,
+		   name: "Freedom Room"),
+	Room(photoUrls: [
+		URL(string: "https://s7d4.scene7.com/is/image/roomandboard/wyatt_438274_19e_g?hei=725&$str_g$")!,
+		URL(string: "https://secure.img1-fg.wfcdn.com/im/74202513/resize-h800-w800%5Ecompr-r85/4555/45554584/Valencia+5+Piece+Bedroom+Set.jpg")!,
+		URL(string: "https://s3.amazonaws.com/furniture.retailcatalog.us/products/201732/large/1700-dark-oak.jpg")!
+		], rates: [Room.Rate(date: Date(), price: 40)],
+		   roomNumber: 2,
+		   name: "Study Room"),
+	Room(photoUrls: [
+		URL(string: "https://s7d4.scene7.com/is/image/roomandboard/wyatt_438274_19e_g?hei=725&$str_g$")!,
+		URL(string: "https://secure.img1-fg.wfcdn.com/im/74202513/resize-h800-w800%5Ecompr-r85/4555/45554584/Valencia+5+Piece+Bedroom+Set.jpg")!,
+		URL(string: "https://s3.amazonaws.com/furniture.retailcatalog.us/products/201732/large/1700-dark-oak.jpg")!
+		], rates: [Room.Rate(date: Date(), price: 55)],
+		   roomNumber: 3,
+		   name: "Cheese Room"),
+	Room(photoUrls: [
+		URL(string: "https://s7d4.scene7.com/is/image/roomandboard/wyatt_438274_19e_g?hei=725&$str_g$")!,
+		URL(string: "https://secure.img1-fg.wfcdn.com/im/74202513/resize-h800-w800%5Ecompr-r85/4555/45554584/Valencia+5+Piece+Bedroom+Set.jpg")!,
+		URL(string: "https://s3.amazonaws.com/furniture.retailcatalog.us/products/201732/large/1700-dark-oak.jpg")!
+		], rates: [Room.Rate(date: Date(), price: 44.49)],
+		   roomNumber: 4,
+		   name: "People Room")
 ]
 
 

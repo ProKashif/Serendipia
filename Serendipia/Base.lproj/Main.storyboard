@@ -1004,10 +1004,13 @@ community</string>
                                                         <real key="value" value="22"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="5W1-f6-bgu" kind="show" id="g8T-Pm-da6"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aix-v7-RTb">
                                                 <rect key="frame" x="25" y="359" width="364" height="250.66666666666663"/>
-                                                <mutableString key="text">Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.afsl;dkfjas;lkfj;aslkdfj;laskdjf;laskdjf;laskdjf;laksjf;laksdjf;lksjfoieqrncoeiqrnvoqeinvo;eirnvoienrviueroh eroiguh peiuh ipeurh ipeuhr piuehp iuehwr herih piquerhgipqehrgpq erpoiuh qerpiughpq ieurhgpqehr piuqerh piuqerhgpipiuehrqg piquehgpiqeugpiqeurghpiequrgheiu eiuhiphuhipuqge hipurhiu  huhipqu ehp h piquerhgip qeurhgip querhgpi quehrgpiueqhrgp iequrhg pi</mutableString>
+                                                <string key="text">Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.afsl;dkfjas;lkfj;aslkdfj;laskdjf;laskdjf;laskdjf;laksjf;laksdjf;lksjfoieqrncoeiqrnvoqeinvo;eirnvoienrviueroh eroiguh peiuh ipeurh ipeuhr piuehp iuehwr herih piquerhgipqehrgpq erpoiuh qerpiughpq ieurhgpqehr piuqerh piuqerhgpipiuehrqg piquehgpiqeugpiqeurghpiequrgheiu eiuhiphuhipuqge hipurhiu  huhipqu ehp h piquerhgip qeurhgip querhgpi quehrgpiueqhrgp iequrhg pi</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1089,6 +1092,172 @@ community</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZm-yh-Ytc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1927.5362318840582" y="-1412.9464285714284"/>
+        </scene>
+        <!--Room List Controller-->
+        <scene sceneID="cYV-XJ-f5u">
+            <objects>
+                <viewController id="5W1-f6-bgu" customClass="RoomListController" customModule="Serendipia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lin-JI-s3g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3d2-go-1vF">
+                                <rect key="frame" x="0.0" y="164" width="414" height="649"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="psC-ef-Axr">
+                                    <size key="itemSize" width="414" height="222"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="room" id="9uY-2l-uw3" userLabel="room cell" customClass="RoomListCell" customModule="Serendipia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="222"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="222"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiS-bd-bOb" userLabel="shadow container" customClass="DesignableView" customModule="Serendipia" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="10" width="374" height="202"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azq-PL-pKr" userLabel="rounded container" customClass="DesignableView" customModule="Serendipia" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="202"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-YT-g8f">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="202"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-ve-vbR">
+                                                                    <rect key="frame" x="132.33333333333334" y="20" width="104" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <color key="textColor" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price/night" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cz-pn-TCm">
+                                                                    <rect key="frame" x="132.33333333333334" y="48" width="70.333333333333343" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INL-dy-gkY" customClass="DesignableButton" customModule="Serendipia" customModuleProvider="target">
+                                                                    <rect key="frame" x="132.33333333333337" y="142" width="210.66666666666663" height="40"/>
+                                                                    <color key="backgroundColor" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="4ie-Yr-aEt"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                                                    <state key="normal" title="See Available Beds">
+                                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </state>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="20"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="b6r-YT-g8f" firstAttribute="top" secondItem="Azq-PL-pKr" secondAttribute="top" id="2Ao-3P-UUJ"/>
+                                                                <constraint firstItem="6cz-pn-TCm" firstAttribute="leading" secondItem="2I4-ve-vbR" secondAttribute="leading" id="9A2-kC-BNd"/>
+                                                                <constraint firstItem="b6r-YT-g8f" firstAttribute="width" secondItem="Azq-PL-pKr" secondAttribute="width" multiplier="0.3" id="9Aq-B2-2Xq"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2I4-ve-vbR" secondAttribute="trailing" id="B4M-Mn-FJ6"/>
+                                                                <constraint firstAttribute="bottom" secondItem="b6r-YT-g8f" secondAttribute="bottom" id="E4g-3i-QLm"/>
+                                                                <constraint firstItem="INL-dy-gkY" firstAttribute="leading" secondItem="2I4-ve-vbR" secondAttribute="leading" id="HAQ-h3-SxM"/>
+                                                                <constraint firstAttribute="bottom" secondItem="INL-dy-gkY" secondAttribute="bottom" constant="20" id="V1m-Gr-e6Q"/>
+                                                                <constraint firstItem="2I4-ve-vbR" firstAttribute="leading" secondItem="b6r-YT-g8f" secondAttribute="trailing" constant="20" id="ccx-xZ-OxA"/>
+                                                                <constraint firstItem="6cz-pn-TCm" firstAttribute="top" secondItem="2I4-ve-vbR" secondAttribute="bottom" constant="4" id="cw0-cR-5Mk"/>
+                                                                <constraint firstAttribute="trailing" secondItem="INL-dy-gkY" secondAttribute="trailing" constant="31" id="fuV-aU-5z3"/>
+                                                                <constraint firstItem="b6r-YT-g8f" firstAttribute="leading" secondItem="Azq-PL-pKr" secondAttribute="leading" id="hW2-Hf-BR1"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6cz-pn-TCm" secondAttribute="trailing" constant="20" symbolic="YES" id="p8a-se-NWj"/>
+                                                                <constraint firstItem="2I4-ve-vbR" firstAttribute="top" secondItem="Azq-PL-pKr" secondAttribute="top" constant="20" id="sfw-ea-clN"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="20"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                    <size key="value" width="0.0" height="3"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                    <real key="value" value="0.10000000000000001"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                                    <real key="value" value="4"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Azq-PL-pKr" firstAttribute="top" secondItem="qiS-bd-bOb" secondAttribute="top" id="77z-Gp-YTT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Azq-PL-pKr" secondAttribute="trailing" id="AsC-1q-4Dk"/>
+                                                        <constraint firstItem="Azq-PL-pKr" firstAttribute="leading" secondItem="qiS-bd-bOb" secondAttribute="leading" id="T3H-u8-DTl"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Azq-PL-pKr" secondAttribute="bottom" id="jGH-FV-tXO"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="20"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="0.10000000000000001"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="qiS-bd-bOb" firstAttribute="leadingMargin" secondItem="9uY-2l-uw3" secondAttribute="leading" constant="20" id="2Zy-yJ-a6n"/>
+                                            <constraint firstAttribute="bottom" secondItem="qiS-bd-bOb" secondAttribute="bottom" constant="10" id="7OE-a3-VEr"/>
+                                            <constraint firstAttribute="trailing" secondItem="qiS-bd-bOb" secondAttribute="trailingMargin" constant="40" id="LOK-n9-IVV"/>
+                                            <constraint firstItem="qiS-bd-bOb" firstAttribute="top" secondItem="9uY-2l-uw3" secondAttribute="top" constant="10" id="PeS-T8-hDt"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="20" bottom="8" right="20"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="b6r-YT-g8f" id="nD8-EV-4l6"/>
+                                            <outlet property="rateLabel" destination="6cz-pn-TCm" id="fi3-jI-2rR"/>
+                                            <outlet property="roomNameLabel" destination="2I4-ve-vbR" id="6kk-9t-hKe"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dt-iN-uyc">
+                                <rect key="frame" x="20" y="108" width="163" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Z8-Wo-xDG" firstAttribute="trailing" secondItem="3d2-go-1vF" secondAttribute="trailing" id="1tY-vF-7b6"/>
+                            <constraint firstItem="9dt-iN-uyc" firstAttribute="top" secondItem="8Z8-Wo-xDG" secondAttribute="top" constant="20" id="Gt4-XP-xVT"/>
+                            <constraint firstItem="9dt-iN-uyc" firstAttribute="leading" secondItem="lin-JI-s3g" secondAttribute="leadingMargin" id="KgN-tw-IZf"/>
+                            <constraint firstItem="3d2-go-1vF" firstAttribute="leading" secondItem="8Z8-Wo-xDG" secondAttribute="leading" id="gTf-hL-qet"/>
+                            <constraint firstItem="8Z8-Wo-xDG" firstAttribute="bottom" secondItem="3d2-go-1vF" secondAttribute="bottom" id="ix1-Gu-d91"/>
+                            <constraint firstItem="3d2-go-1vF" firstAttribute="top" secondItem="9dt-iN-uyc" secondAttribute="bottom" constant="20" id="oXM-zw-xki"/>
+                            <constraint firstItem="8Z8-Wo-xDG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9dt-iN-uyc" secondAttribute="trailing" symbolic="YES" id="rEr-xy-qd1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Z8-Wo-xDG"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="3d2-go-1vF" id="Gqb-VD-kyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5im-tN-f7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2813.04347826087" y="-1412.9464285714284"/>
         </scene>
     </scenes>
     <resources>

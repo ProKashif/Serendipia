@@ -46,6 +46,14 @@ class HouseDetailsController: UIViewController {
 		phoneNumberLabel.text = house?.manager.phoneNumber
 		emailLabel.text = house?.manager.email
 	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		super.prepare(for: segue, sender: sender)
+		
+		if let roomListController = segue.destination as? RoomListController {
+			roomListController.collectionViewDataSource.rooms = house?.rooms
+		}
+	}
 }
 
 
