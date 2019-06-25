@@ -336,7 +336,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="360"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="Vm2-rq-Ekz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="237.00000000000011"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="237"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="236.99999999999989" id="f2W-Tn-455"/>
                                                                     </constraints>
@@ -862,7 +862,7 @@ community</string>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLy-2G-U0w" userLabel="scroll content view">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dwp-0E-AGM">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dwp-0E-AGM">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -883,7 +883,7 @@ community</string>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="iIw-xy-oc2">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="362" height="220.00000000000011"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="362" height="220"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </view>
@@ -918,7 +918,7 @@ community</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1X-5S-Wps" customClass="DividerLine" customModule="Serendipia" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="343" width="381" height="1"/>
+                                                <rect key="frame" x="25" y="343" width="364" height="1"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="7tE-1e-0Lc"/>
@@ -1006,12 +1006,15 @@ community</string>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aix-v7-RTb">
-                                                <rect key="frame" x="25" y="359" width="369" height="250.66666666666663"/>
+                                                <rect key="frame" x="25" y="359" width="364" height="250.66666666666663"/>
                                                 <mutableString key="text">Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.afsl;dkfjas;lkfj;aslkdfj;laskdjf;laskdjf;laskdjf;laksjf;laksdjf;lksjfoieqrncoeiqrnvoqeinvo;eirnvoienrviueroh eroiguh peiuh ipeurh ipeuhr piuehp iuehwr herih piquerhgipqehrgpq erpoiuh qerpiughpq ieurhgpqehr piuqerh piuqerhgpipiuehrqg piquehgpiqeugpiqeurghpiequrgheiu eiuhiphuhipuqge hipurhiu  huhipqu ehp h piquerhgip qeurhgip querhgpi quehrgpiueqhrgp iequrhg pi</mutableString>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mlB-uN-DAW">
+                                                <rect key="frame" x="187.66666666666666" y="190" width="39" height="37"/>
+                                            </pageControl>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1026,6 +1029,7 @@ community</string>
                                             <constraint firstItem="D1X-5S-Wps" firstAttribute="top" secondItem="ih3-q1-BpQ" secondAttribute="bottom" constant="23" id="DtN-Tv-f62"/>
                                             <constraint firstItem="JEb-PH-xYo" firstAttribute="top" secondItem="ada-yb-MAq" secondAttribute="bottom" constant="17" id="E1z-6m-k4T"/>
                                             <constraint firstItem="ada-yb-MAq" firstAttribute="leading" secondItem="RDz-wj-yd5" secondAttribute="leading" id="HoW-zH-ROp"/>
+                                            <constraint firstItem="mlB-uN-DAW" firstAttribute="centerX" secondItem="Dwp-0E-AGM" secondAttribute="centerX" id="IrV-2E-NJk"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="D1X-5S-Wps" secondAttribute="trailing" id="JaZ-sb-afU"/>
                                             <constraint firstAttribute="trailing" secondItem="aqD-jg-ucH" secondAttribute="trailing" constant="20" id="LNp-jY-TEv"/>
                                             <constraint firstItem="aix-v7-RTb" firstAttribute="top" secondItem="D1X-5S-Wps" secondAttribute="bottom" constant="15" id="Sc6-hg-vDP"/>
@@ -1033,7 +1037,7 @@ community</string>
                                             <constraint firstItem="8mg-tF-3s7" firstAttribute="leading" secondItem="RDz-wj-yd5" secondAttribute="leading" id="Wmh-0i-C9L"/>
                                             <constraint firstItem="Dwp-0E-AGM" firstAttribute="leading" secondItem="uLy-2G-U0w" secondAttribute="leading" id="ZUh-je-jTg"/>
                                             <constraint firstAttribute="trailing" secondItem="JEb-PH-xYo" secondAttribute="trailing" constant="20" id="dbO-YR-wgS"/>
-                                            <constraint firstAttribute="trailing" secondItem="aix-v7-RTb" secondAttribute="trailing" constant="20" id="det-SF-wH0"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="aix-v7-RTb" secondAttribute="trailing" id="det-SF-wH0"/>
                                             <constraint firstItem="D1X-5S-Wps" firstAttribute="leading" secondItem="RDz-wj-yd5" secondAttribute="leading" id="fRC-FW-jby"/>
                                             <constraint firstItem="cVU-fg-gRz" firstAttribute="top" secondItem="8mg-tF-3s7" secondAttribute="bottom" constant="10" id="ikc-4P-R87"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RDz-wj-yd5" secondAttribute="trailing" constant="20" symbolic="YES" id="ipm-2X-5CY"/>
@@ -1041,13 +1045,14 @@ community</string>
                                             <constraint firstItem="Dwp-0E-AGM" firstAttribute="top" secondItem="uLy-2G-U0w" secondAttribute="top" id="ki4-5I-PSm"/>
                                             <constraint firstItem="JEb-PH-xYo" firstAttribute="leading" secondItem="uLy-2G-U0w" secondAttribute="leading" constant="20" id="lFV-vf-7UV"/>
                                             <constraint firstItem="cVU-fg-gRz" firstAttribute="leading" secondItem="RDz-wj-yd5" secondAttribute="leading" id="lm3-q3-fsE"/>
+                                            <constraint firstItem="Dwp-0E-AGM" firstAttribute="bottom" secondItem="mlB-uN-DAW" secondAttribute="bottom" constant="8" id="nKu-tW-54P"/>
                                             <constraint firstItem="aix-v7-RTb" firstAttribute="leading" secondItem="RDz-wj-yd5" secondAttribute="leading" id="nt2-pt-xZR"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8mg-tF-3s7" secondAttribute="trailing" constant="20" symbolic="YES" id="pOO-1l-A6M"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8mg-tF-3s7" secondAttribute="trailingMargin" id="pOO-1l-A6M"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JEb-PH-xYo" secondAttribute="bottom" constant="20" id="rcA-C8-4Cg"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ih3-q1-BpQ" secondAttribute="trailing" constant="20" symbolic="YES" id="uFx-aL-Zet"/>
                                             <constraint firstAttribute="trailing" secondItem="Dwp-0E-AGM" secondAttribute="trailing" id="xVX-ie-wWg"/>
                                         </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="25" bottom="8" right="8"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="25" bottom="8" right="25"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -1070,8 +1075,15 @@ community</string>
                         <viewLayoutGuide key="safeArea" id="nHO-Mb-VzE"/>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="ih3-q1-BpQ" id="TA6-pR-yId"/>
+                        <outlet property="cityLabel" destination="RDz-wj-yd5" id="EQc-qi-xH4"/>
+                        <outlet property="descriptionLabel" destination="aix-v7-RTb" id="3N6-QI-hK2"/>
+                        <outlet property="emailLabel" destination="ada-yb-MAq" id="7Is-6V-N7i"/>
                         <outlet property="houseAmenitiesScroller" destination="aqD-jg-ucH" id="ML5-x1-HCG"/>
+                        <outlet property="houseManagerLabel" destination="8mg-tF-3s7" id="5bh-d8-QId"/>
                         <outlet property="housePhotoScroller" destination="Dwp-0E-AGM" id="ygW-xe-KEp"/>
+                        <outlet property="pageControl" destination="mlB-uN-DAW" id="ngF-Qq-UUT"/>
+                        <outlet property="phoneNumberLabel" destination="cVU-fg-gRz" id="4wg-Bw-rtw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZm-yh-Ytc" userLabel="First Responder" sceneMemberID="firstResponder"/>

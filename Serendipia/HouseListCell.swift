@@ -29,6 +29,9 @@ class HouseListCell: UICollectionViewCell {
 	override func prepareForReuse() {
 		super.prepareForReuse()
 		houseSelected = nil
+		previewImage.image = UIImage(named: "house")
+		cityLabel.text = "xxx"
+		streetLabel.text = "xxx"
 	}
 	
 	func configure(house: House) {

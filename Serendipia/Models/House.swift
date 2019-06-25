@@ -39,7 +39,11 @@ struct House {
 	let title: String
 	let coordinates: CLLocationCoordinate2D
 	let amenities: [Amenity]
+	let description: String
+	let manager: User
 }
+
+
 
 struct Address {
 	let city: String
