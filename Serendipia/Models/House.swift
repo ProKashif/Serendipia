@@ -8,16 +8,37 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 typealias Price = Float
 
 struct House {
+	enum Amenity {
+		case laundry
+		case wifi
+		case snacks
+		case cleaning
+		
+		var icon: UIImage? {
+			switch self {
+			case .laundry:
+				return UIImage(named: "laundry")
+			case .wifi:
+				return UIImage(named: "wifi")
+			case .snacks:
+				return UIImage(named: "apple")
+			case .cleaning:
+				return UIImage(named: "broom")
+			}
+		}
+	}
 	let photoUrls: [URL]
 	let address: Address
 	let rooms: [Room]
 	let id: String
 	let title: String
 	let coordinates: CLLocationCoordinate2D
+	let amenities: [Amenity]
 }
 
 struct Address {

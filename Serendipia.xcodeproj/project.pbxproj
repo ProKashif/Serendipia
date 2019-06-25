@@ -15,6 +15,9 @@
 		7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */; };
 		7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */; };
 		7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */; };
+		763684FF22C1991F00A9DB98 /* HouseDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */; };
+		7636850122C19BC100A9DB98 /* DividerLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636850022C19BC100A9DB98 /* DividerLine.swift */; };
+		7636850322C1E02900A9DB98 /* HouseAmenityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */; };
 		768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8822BD5220009CE688 /* ViewExtensions.swift */; };
 		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
 		768E4D8D22BD5D17009CE688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8C22BD5D17009CE688 /* User.swift */; };
@@ -22,6 +25,7 @@
 		76C1AB6F22BECCFA00F4BDE3 /* HouseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */; };
 		76C1AB7122BECD8100F4BDE3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB7022BECD8100F4BDE3 /* House.swift */; };
 		76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */; };
+		76C430EF22C1FA5F00D47AC6 /* HousePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */; };
 		76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */; };
 		76FBC3C322BAEA67003FE54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C122BAEA67003FE54A /* Main.storyboard */; };
 		76FBC3C522BAEA6A003FE54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C422BAEA6A003FE54A /* Assets.xcassets */; };
@@ -38,6 +42,9 @@
 		7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorKeyTabController.swift; sourceTree = "<group>"; };
 		7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabController.swift; sourceTree = "<group>"; };
 		7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailsController.swift; sourceTree = "<group>"; };
+		7636850022C19BC100A9DB98 /* DividerLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerLine.swift; sourceTree = "<group>"; };
+		7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseAmenityCell.swift; sourceTree = "<group>"; };
 		768E4D8822BD5220009CE688 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		768E4D8C22BD5D17009CE688 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -45,6 +52,7 @@
 		76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListController.swift; sourceTree = "<group>"; };
 		76C1AB7022BECD8100F4BDE3 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListCell.swift; sourceTree = "<group>"; };
+		76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePhotoCell.swift; sourceTree = "<group>"; };
 		76FBC3B822BAEA67003FE54A /* Serendipia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FBC3C222BAEA67003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,13 +135,17 @@
 				7627B8A722BD64B600DD75F0 /* RegistrationController.swift */,
 				7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */,
 				76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */,
+				763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */,
 				7607AA4522BFE98600E2CC93 /* MapViewCell.swift */,
 				76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */,
+				76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */,
 				7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */,
 				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
 				7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */,
 				7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */,
+				7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */,
 				76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */,
+				7636850022C19BC100A9DB98 /* DividerLine.swift */,
 			);
 			path = Serendipia;
 			sourceTree = "<group>";
@@ -273,16 +285,20 @@
 				7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */,
 				768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */,
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
+				763684FF22C1991F00A9DB98 /* HouseDetailsController.swift in Sources */,
 				7607AA4622BFE98600E2CC93 /* MapViewCell.swift in Sources */,
 				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
 				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
 				76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
+				7636850122C19BC100A9DB98 /* DividerLine.swift in Sources */,
 				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,
 				7627B8A822BD64B600DD75F0 /* RegistrationController.swift in Sources */,
 				768E4D8D22BD5D17009CE688 /* User.swift in Sources */,
 				7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */,
 				76C1AB6D22BE99C100F4BDE3 /* DateExtensions.swift in Sources */,
+				76C430EF22C1FA5F00D47AC6 /* HousePhotoCell.swift in Sources */,
+				7636850322C1E02900A9DB98 /* HouseAmenityCell.swift in Sources */,
 				76C1AB6F22BECCFA00F4BDE3 /* HouseListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

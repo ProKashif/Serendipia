@@ -16,15 +16,15 @@ class HouseListCell: UICollectionViewCell {
 	
 	var houseSelected: ((String) -> ())?
 	
-	@IBAction func bookTapped() {
-		guard
-			let houseId = houseId,
-			let houseSelected = houseSelected
-		else {
-			fatalError()
-		}
-		houseSelected(houseId)
-	}
+//	@IBAction func bookTapped() {
+//		guard
+//			let houseId = houseId,
+//			let houseSelected = houseSelected
+//		else {
+//			fatalError()
+//		}
+//		houseSelected(houseId)
+//	}
 	
 	override func prepareForReuse() {
 		super.prepareForReuse()
