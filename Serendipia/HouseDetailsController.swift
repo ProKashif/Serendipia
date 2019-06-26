@@ -8,8 +8,9 @@
 
 import UIKit
 
-class HouseDetailsController: UIViewController {
-	var house: House?
+class HouseDetailsController: UIViewController, ReservationBuilding {
+	var reservation: Reservation?
+	var house: House? { return reservation?.house}
 	
 	var housePhotosDataSource = HousePhotoScrollerDataSource()
 	@IBOutlet weak var housePhotoScroller: UICollectionView?
@@ -51,7 +52,11 @@ class HouseDetailsController: UIViewController {
 		super.prepare(for: segue, sender: sender)
 		
 		if let roomListController = segue.destination as? RoomListController {
-			roomListController.collectionViewDataSource.rooms = house?.rooms
+			roomListController.collectionViewDataSource.rooms = testRooms
+			
+			if var reservationBuilder = segue.destination as? ReservationBuilding {
+				reservationBuilder.reservation = reservation
+			}
 		}
 	}
 }

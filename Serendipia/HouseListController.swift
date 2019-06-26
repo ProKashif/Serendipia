@@ -9,9 +9,11 @@
 import UIKit
 import CoreLocation
 
-class HouseListController: UIViewController {
+class HouseListController: UIViewController, ReservationBuilding {
+	var reservation: Reservation?
 	var houses = testHouses
 	@IBOutlet private var collectionView: UICollectionView?
+	@IBOutlet weak var locationAndDateLabel: UILabel!
 	private var dataSource: UICollectionViewDataSource = ListHouseDataSource() {
 		didSet {
 			collectionView?.dataSource = dataSource
@@ -52,8 +54,9 @@ class HouseListController: UIViewController {
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if let houseDetails = segue.destination as? HouseDetailsController, let cell = sender as? UICollectionViewCell {
-			houseDetails.house = houses[collectionView?.indexPath(for: cell)?.row ?? 0]
+		if var reservationBuilder = segue.destination as? ReservationBuilding, let cell = sender as? UICollectionViewCell {
+			reservation?.house = houses[collectionView?.indexPath(for: cell)?.row ?? 0]
+			reservationBuilder.reservation = reservation
 		}
 	}
 }
@@ -76,7 +79,6 @@ private class ListHouseDataSource: NSObject, HouseDataSource {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "house", for: indexPath)
 		if let cell = cell as? HouseListCell {
 			cell.configure(house: houses[indexPath.row])
-//			cell.houseSelected = bookHouse
 		}
 		return cell
 	}
@@ -127,7 +129,6 @@ let testHouses: [House] = [
 		URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Makedonska_street%2C_Belgrade%2C_Serbia%2C_2019._09.jpg/1920px-Makedonska_street%2C_Belgrade%2C_Serbia%2C_2019._09.jpg")!,
 		],
 		  address: Address(city: "San Francisco", houseNumber: "123", street: "Haight St"),
-		  rooms: testRooms,
 		  id: "1",
 		  title: "Serendipia Cooperative",
 		  coordinates: CLLocationCoordinate2D(latitude: 37.4002029, longitude: -122.4110734),
@@ -135,7 +136,6 @@ let testHouses: [House] = [
 		  description: "Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
 	House(photoUrls: [URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Dumbrava_Rosie_11.jpg")!],
 		  address: Address(city: "Los Gatos", houseNumber: "233", street: "Booger St"),
-		  rooms: testRooms,
 		  id: "2",
 		  title: "JLO's House",
 		  coordinates: CLLocationCoordinate2D(latitude: 37.829, longitude: -122.4311074),
@@ -143,7 +143,6 @@ let testHouses: [House] = [
 		  description: "Boogy Boody Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
 	House(photoUrls: [URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%22%D0%A3%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%92.%D0%9F._%D0%A1%D1%83%D0%BA%D0%B0%D1%87%D0%B5%D0%B2%D0%B0%22%2C_%D1%84%D0%B0%D1%81%D0%B0%D0%B4_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D0%B8.jpg/1920px-%22%D0%A3%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%92.%D0%9F._%D0%A1%D1%83%D0%BA%D0%B0%D1%87%D0%B5%D0%B2%D0%B0%22%2C_%D1%84%D0%B0%D1%81%D0%B0%D0%B4_%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D1%8F_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D0%B9_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D0%B8.jpg")!],
 		  address: Address(city: "Alameda", houseNumber: "284", street: "Ajar Ave"),
-		  rooms: testRooms,
 		  id: "3",
 		  title: "Serendipia Nest",
 		  coordinates: CLLocationCoordinate2D(latitude: 37.800, longitude: -122.473),
@@ -151,7 +150,6 @@ let testHouses: [House] = [
 		  description: "Looking for that urban oasis tucked away inside bustling North Beach? Look no further. This vintage, free-standing home will be the envy of all your friends. Enter through your own private passage away into a secret garden: You'll never believe this is your home, steps away from Washington Park, Columbus Avenue and all that Little Italy has to offer.", manager: testUsers[0]),
 	House(photoUrls: [URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Makedonska_street%2C_Belgrade%2C_Serbia%2C_2019._09.jpg/1920px-Makedonska_street%2C_Belgrade%2C_Serbia%2C_2019._09.jpg")!],
 		  address: Address(city: "San Francisco", houseNumber: "1243", street: "Left St"),
-		  rooms: testRooms,
 		  id: "4",
 		  title: "Burger King",
 		  coordinates: CLLocationCoordinate2D(latitude: 37.80029, longitude: -122.10334),
@@ -162,16 +160,16 @@ let testHouses: [House] = [
 
 let testRooms = [
 	Room(photoUrls: [
-		URL(string: "https://s7d4.scene7.com/is/image/roomandboard/wyatt_438274_19e_g?hei=725&$str_g$")!,
 		URL(string: "https://secure.img1-fg.wfcdn.com/im/74202513/resize-h800-w800%5Ecompr-r85/4555/45554584/Valencia+5+Piece+Bedroom+Set.jpg")!,
+		URL(string: "https://s7d4.scene7.com/is/image/roomandboard/wyatt_438274_19e_g?hei=725&$str_g$")!,
 		URL(string: "https://s3.amazonaws.com/furniture.retailcatalog.us/products/201732/large/1700-dark-oak.jpg")!
 		], rates: [Room.Rate(date: Date(), price: 50)],
 		   roomNumber: 1,
 		   name: "Freedom Room"),
 	Room(photoUrls: [
+		URL(string: "https://s3.amazonaws.com/furniture.retailcatalog.us/products/201732/large/1700-dark-oak.jpg")!,
 		URL(string: "https://s7d4.scene7.com/is/image/roomandboard/wyatt_438274_19e_g?hei=725&$str_g$")!,
 		URL(string: "https://secure.img1-fg.wfcdn.com/im/74202513/resize-h800-w800%5Ecompr-r85/4555/45554584/Valencia+5+Piece+Bedroom+Set.jpg")!,
-		URL(string: "https://s3.amazonaws.com/furniture.retailcatalog.us/products/201732/large/1700-dark-oak.jpg")!
 		], rates: [Room.Rate(date: Date(), price: 40)],
 		   roomNumber: 2,
 		   name: "Study Room"),

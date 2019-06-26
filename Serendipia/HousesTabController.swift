@@ -9,6 +9,10 @@
 import PureLayout
 import FSCalendar
 
+protocol ReservationBuilding {
+	var reservation: Reservation? { set get }
+}
+
 let darkPink = UIColor(red: 0.855, green: 0.255, blue: 0.545, alpha: 1.0)
 let lightPink = UIColor(red: 0.96, green: 0.74, blue: 0.859, alpha: 1.0)
 
@@ -76,6 +80,16 @@ class HousesTabController: UIViewController {
 			startDate != nil &&
 			endDate != nil &&
 			searchLocationField.text != nil
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if var reservationBuilder = segue.destination as? ReservationBuilding {
+			guard
+				let startDate = startDate,
+				let endDate = endDate
+			else { return }
+			reservationBuilder.reservation = Reservation(startDate: startDate, endDate: endDate)
+		}
 	}
 }
 
@@ -166,13 +180,6 @@ extension HousesTabController: FSCalendarDelegateAppearance, FSCalendarDataSourc
 			}
 		}
 	}
-	
-//	private func updateEndDate() {
-//		guard let firstDate = calendar?.selectedDates.first else { return }
-//		endDate = calendar?.selectedDates.reduce(firstDate) { result, date -> Date in
-//			return max(date, result)
-//		}
-//	}
 
 	private func makeCalendarInputAccessoryView(title: String) -> UIView {
 		let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 60))

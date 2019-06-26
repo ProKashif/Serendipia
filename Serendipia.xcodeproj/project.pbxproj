@@ -28,6 +28,7 @@
 		76C430EF22C1FA5F00D47AC6 /* HousePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */; };
 		76C430F122C2873100D47AC6 /* RoomListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C430F022C2873100D47AC6 /* RoomListController.swift */; };
 		76C430F322C28AD000D47AC6 /* RoomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C430F222C28AD000D47AC6 /* RoomListCell.swift */; };
+		76F0D20722C29ECE00FB07FF /* ReservationSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0D20622C29ECE00FB07FF /* ReservationSummaryController.swift */; };
 		76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */; };
 		76FBC3C322BAEA67003FE54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C122BAEA67003FE54A /* Main.storyboard */; };
 		76FBC3C522BAEA6A003FE54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C422BAEA6A003FE54A /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePhotoCell.swift; sourceTree = "<group>"; };
 		76C430F022C2873100D47AC6 /* RoomListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListController.swift; sourceTree = "<group>"; };
 		76C430F222C28AD000D47AC6 /* RoomListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListCell.swift; sourceTree = "<group>"; };
+		76F0D20622C29ECE00FB07FF /* ReservationSummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationSummaryController.swift; sourceTree = "<group>"; };
 		76FBC3B822BAEA67003FE54A /* Serendipia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76FBC3C222BAEA67003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */,
 				76C430F022C2873100D47AC6 /* RoomListController.swift */,
 				76C430F222C28AD000D47AC6 /* RoomListCell.swift */,
+				76F0D20622C29ECE00FB07FF /* ReservationSummaryController.swift */,
 				76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */,
 				7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */,
 				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
@@ -300,6 +303,7 @@
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
 				7636850122C19BC100A9DB98 /* DividerLine.swift in Sources */,
 				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,
+				76F0D20722C29ECE00FB07FF /* ReservationSummaryController.swift in Sources */,
 				7627B8A822BD64B600DD75F0 /* RegistrationController.swift in Sources */,
 				76C430F122C2873100D47AC6 /* RoomListController.swift in Sources */,
 				768E4D8D22BD5D17009CE688 /* User.swift in Sources */,

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class RoomListController: UIViewController {
+class RoomListController: UIViewController, ReservationBuilding {
+	var reservation: Reservation?
 	@IBOutlet weak var collectionView: UICollectionView!
 	private(set) var collectionViewDataSource = RoomListDataSource()
 	
@@ -19,6 +20,19 @@ class RoomListController: UIViewController {
 		if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
 			flowLayout.itemSize.width = collectionView.frame.width - 20
 		}
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		super.prepare(for: segue, sender: sender)
+		
+		guard
+			var reservationBuilder = segue.destination as? ReservationBuilding,
+			let cell = sender as? UICollectionViewCell,
+			let indexPath = collectionView.indexPath(for: cell)
+		else { return }
+		
+		reservation?.room = collectionViewDataSource.rooms?[indexPath.item]
+		reservationBuilder.reservation = reservation
 	}
 }
 

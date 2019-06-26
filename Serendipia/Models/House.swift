@@ -34,7 +34,6 @@ struct House {
 	}
 	let photoUrls: [URL]
 	let address: Address
-	let rooms: [Room]
 	let id: String
 	let title: String
 	let coordinates: CLLocationCoordinate2D
@@ -49,6 +48,7 @@ struct Address {
 	let city: String
 	let houseNumber: String
 	let street: String
+	var streetAndHouseNumber: String { return "\(houseNumber), \(street)"}
 }
 
 
@@ -71,5 +71,28 @@ extension Room {
 		return rates.reduce(rates[0]) { result, rate -> Rate in
 			return result.price < rate.price ? result : rate
 		}
+	}
+}
+
+
+struct Reservation {
+	let startDate: Date
+	let endDate: Date
+	var length: Int {
+		return endDate.interval(ofComponent: .day, fromDate: startDate)
+	}
+	var taxes: Price?
+	var subTotal: Price? {
+		return (room?.rates.first?.price ?? 0) * Float(length)
+	}
+	var grandTotal: Price {
+		return (subTotal ?? 0) + (taxes ?? 0)
+	}
+	var room: Room?
+	var house: House?
+	
+	init(startDate: Date, endDate: Date) {
+		self.startDate = startDate
+		self.endDate = endDate
 	}
 }
