@@ -13,6 +13,7 @@ class HouseListCell: UICollectionViewCell {
 	@IBOutlet private weak var cityLabel: UILabel!
 	@IBOutlet private weak var streetLabel: UILabel!
 	private var houseId: String?
+	private var houseImageCache = ImageCache.shared
 	
 	var houseSelected: ((String) -> ())?
 	
@@ -36,11 +37,26 @@ class HouseListCell: UICollectionViewCell {
 	
 	func configure(house: House) {
 		houseId = house.id
-		DispatchQueue.global(qos: .userInteractive).async { [weak self] in
-			if let imageData = try? Data(contentsOf: house.photoUrls[0]) {
-				if house.id == self?.houseId {
-					DispatchQueue.main.async {
-						self?.previewImage.image = UIImage(data: imageData)
+		
+		guard let imageUrl = house.photoUrls.first else {
+			//error
+			return
+		}
+		
+		if let image = houseImageCache.image(for: imageUrl) {
+			previewImage.image = image
+		} else {
+			DispatchQueue.global(qos: .userInteractive).async { [weak self] in
+				if let imageData = try? Data(contentsOf: house.photoUrls[0]) {
+					if house.id == self?.houseId {
+						DispatchQueue.main.async { [weak self] in
+							guard let image = UIImage(data: imageData) else {
+								//error
+								return
+							}
+							self?.houseImageCache.cacheImage(image, for: imageUrl)
+							self?.previewImage.image = image
+						}
 					}
 				}
 			}

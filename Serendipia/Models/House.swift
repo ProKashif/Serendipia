@@ -90,6 +90,7 @@ struct Reservation {
 	}
 	var room: Room?
 	var house: House?
+	var confirmationNumber: String?
 	
 	init(startDate: Date, endDate: Date) {
 		self.startDate = startDate

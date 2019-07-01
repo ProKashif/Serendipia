@@ -38,4 +38,12 @@ class ReservationSummaryController: UIViewController, ReservationBuilding {
 		taxesLabel.text = "$\(reservation.taxes ?? 0) USD"
 		grandTotalLabel.text = "$\(reservation.grandTotal) USD"
 	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		super.prepare(for: segue, sender: sender)
+		
+		if let success = segue.destination as? ReservationSuccessController {
+			success.configure(confirmationNumber: reservation?.confirmationNumber ?? "123456789")
+		}
+	}
 }
