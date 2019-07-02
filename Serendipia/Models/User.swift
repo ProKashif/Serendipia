@@ -8,9 +8,14 @@
 
 import Foundation
 
-struct User: Codable {
+struct User: Codable, Equatable {
 	let id: String
 	let name: String
 	let email: String
 	let phoneNumber: String
+	let profilePhotoUrl: URL
+	
+	static func == (lhs: User, rhs: User) -> Bool {
+		return lhs.id == rhs.id
+	}
 }

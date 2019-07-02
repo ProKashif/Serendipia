@@ -13,7 +13,7 @@ class LogInController: UIViewController {
 	@IBOutlet weak var passwordField: UITextField!
 	
 	@IBAction func logIn() {
-		UserManager.shared.loggedInUserId = "testUser"
+		UserManager.shared.loggedInUser = testUsers.first
 		dismiss()
 	}
 }

@@ -12,7 +12,7 @@ class MainTabBarController: UITabBarController {
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		
-		if UserManager.shared.loggedInUserId == nil {
+		if UserManager.shared.loggedInUser == nil {
 			if let logIn = storyboard?.instantiateViewController(withIdentifier: "logIn") {
 				present(logIn, animated: true, completion: nil)
 			}

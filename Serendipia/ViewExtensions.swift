@@ -170,6 +170,18 @@ extension UIView {
 	}
 }
 
+@IBDesignable class DesignableTextView: UITextView {
+	// Rounded corner raius
+	@IBInspectable var cornerRadius: CGFloat {
+		get {
+			return self.layer.cornerRadius
+		}
+		set {
+			self.layer.cornerRadius = newValue
+		}
+	}
+}
+
 
 extension URL {
 	var nsUrl: NSURL? { return NSURL(string: absoluteString) }

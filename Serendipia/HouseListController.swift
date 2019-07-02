@@ -191,5 +191,5 @@ let testRooms = [
 
 
 let testUsers: [User] = [
-	User(id: "1", name: "Jean Liock Michaux", email: "jlomichaux@gmail.com", phoneNumber: "415-555-5555")
+	User(id: "1", name: "Jean Liock Michaux", email: "jlomichaux@gmail.com", phoneNumber: "415-555-5555", profilePhotoUrl: URL(string: "https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg")!)
 ]

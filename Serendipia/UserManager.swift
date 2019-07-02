@@ -12,11 +12,14 @@ class UserManager {
 	static let shared = UserManager()
 	
 	private let loggedInUserKey = "loggedInUser"
-	var loggedInUserId: String? {
+	var loggedInUser: User? {
 		set {
-			UserDefaults.standard.set(newValue, forKey: loggedInUserKey)
+			if let data = try? PropertyListEncoder().encode(newValue) {
+				UserDefaults.standard.set(data, forKey: loggedInUserKey)
+			}
 		} get {
-			return UserDefaults.standard.value(forKey: loggedInUserKey) as? String
+			guard let data = UserDefaults.standard.value(forKey: loggedInUserKey) as? Data else { return nil }
+			return try? PropertyListDecoder().decode(User.self, from: data)
 		}
 	}
 }

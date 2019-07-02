@@ -18,6 +18,10 @@
 		763684FF22C1991F00A9DB98 /* HouseDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */; };
 		7636850122C19BC100A9DB98 /* DividerLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636850022C19BC100A9DB98 /* DividerLine.swift */; };
 		7636850322C1E02900A9DB98 /* HouseAmenityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */; };
+		765D0CB022C9C6F100BA8283 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D0CAF22C9C6F100BA8283 /* ImageManager.swift */; };
+		765D0CB222C9CA0200BA8283 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D0CB122C9CA0200BA8283 /* Comment.swift */; };
+		765D0CB522C9CC8200BA8283 /* NewsPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D0CB422C9CC8200BA8283 /* NewsPost.swift */; };
+		765D0CB822C9D17900BA8283 /* NewsPostConfiguring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D0CB722C9D17900BA8283 /* NewsPostConfiguring.swift */; };
 		766036CF22C46706007EEE66 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766036CE22C46706007EEE66 /* ImageCache.swift */; };
 		768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8822BD5220009CE688 /* ViewExtensions.swift */; };
 		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
@@ -36,6 +40,10 @@
 		76FBC3C522BAEA6A003FE54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C422BAEA6A003FE54A /* Assets.xcassets */; };
 		76FBC3C822BAEA6A003FE54A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FBC3C622BAEA6A003FE54A /* LaunchScreen.storyboard */; };
 		76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3CF22BAF0B0003FE54A /* LogInController.swift */; };
+		76FD44D322C9C41B00AA352F /* NewsUserAndBodyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD44D222C9C41B00AA352F /* NewsUserAndBodyCell.swift */; };
+		76FD44D522C9C44400AA352F /* NewsLikeAndCommentCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD44D422C9C44400AA352F /* NewsLikeAndCommentCountCell.swift */; };
+		76FD44D722C9C45700AA352F /* NewsCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD44D622C9C45700AA352F /* NewsCommentCell.swift */; };
+		76FD44D922C9C46F00AA352F /* NewsCommentBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD44D822C9C46F00AA352F /* NewsCommentBoxCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +58,10 @@
 		763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailsController.swift; sourceTree = "<group>"; };
 		7636850022C19BC100A9DB98 /* DividerLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerLine.swift; sourceTree = "<group>"; };
 		7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseAmenityCell.swift; sourceTree = "<group>"; };
+		765D0CAF22C9C6F100BA8283 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		765D0CB122C9CA0200BA8283 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		765D0CB422C9CC8200BA8283 /* NewsPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPost.swift; sourceTree = "<group>"; };
+		765D0CB722C9D17900BA8283 /* NewsPostConfiguring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPostConfiguring.swift; sourceTree = "<group>"; };
 		766036CE22C46706007EEE66 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		768E4D8822BD5220009CE688 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -70,6 +82,10 @@
 		76FBC3C722BAEA6A003FE54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FBC3C922BAEA6A003FE54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FBC3CF22BAF0B0003FE54A /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		76FD44D222C9C41B00AA352F /* NewsUserAndBodyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUserAndBodyCell.swift; sourceTree = "<group>"; };
+		76FD44D422C9C44400AA352F /* NewsLikeAndCommentCountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLikeAndCommentCountCell.swift; sourceTree = "<group>"; };
+		76FD44D622C9C45700AA352F /* NewsCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCommentCell.swift; sourceTree = "<group>"; };
+		76FD44D822C9C46F00AA352F /* NewsCommentBoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCommentBoxCell.swift; sourceTree = "<group>"; };
 		A432A442BCAFC4E717C19388 /* Pods_Serendipia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Serendipia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36ACE94F28A494348CAF581 /* Pods-Serendipia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Serendipia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,11 +119,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		765D0CB322C9CB6100BA8283 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */,
+				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
+				7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */,
+				7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		765D0CB622C9CF6E00BA8283 /* News Cells */ = {
+			isa = PBXGroup;
+			children = (
+				76FD44D222C9C41B00AA352F /* NewsUserAndBodyCell.swift */,
+				76FD44D422C9C44400AA352F /* NewsLikeAndCommentCountCell.swift */,
+				76FD44D622C9C45700AA352F /* NewsCommentCell.swift */,
+				76FD44D822C9C46F00AA352F /* NewsCommentBoxCell.swift */,
+				765D0CB722C9D17900BA8283 /* NewsPostConfiguring.swift */,
+			);
+			path = "News Cells";
+			sourceTree = "<group>";
+		};
 		76C1AB7222BECD8B00F4BDE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				768E4D8C22BD5D17009CE688 /* User.swift */,
 				76C1AB7022BECD8100F4BDE3 /* House.swift */,
+				765D0CB122C9CA0200BA8283 /* Comment.swift */,
+				765D0CB422C9CC8200BA8283 /* NewsPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,19 +189,18 @@
 				763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */,
 				7607AA4522BFE98600E2CC93 /* MapViewCell.swift */,
 				76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */,
+				765D0CB622C9CF6E00BA8283 /* News Cells */,
 				76C430F022C2873100D47AC6 /* RoomListController.swift */,
 				76C430F222C28AD000D47AC6 /* RoomListCell.swift */,
 				76F0D20622C29ECE00FB07FF /* ReservationSummaryController.swift */,
 				76F0D20B22C2F6C000FB07FF /* ReservationSuccessController.swift */,
 				76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */,
-				7627B8AB22BD66C400DD75F0 /* NewsTabController.swift */,
-				7627B8AD22BD66D100DD75F0 /* DoorKeyTabController.swift */,
-				7627B8AF22BD66E000DD75F0 /* ProfileTabController.swift */,
-				7627B8B122BD6B2500DD75F0 /* MainTabBarController.swift */,
+				765D0CB322C9CB6100BA8283 /* Tabs */,
 				7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */,
 				76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */,
 				7636850022C19BC100A9DB98 /* DividerLine.swift */,
 				766036CE22C46706007EEE66 /* ImageCache.swift */,
+				765D0CAF22C9C6F100BA8283 /* ImageManager.swift */,
 			);
 			path = Serendipia;
 			sourceTree = "<group>";
@@ -300,21 +340,29 @@
 				76C430F322C28AD000D47AC6 /* RoomListCell.swift in Sources */,
 				7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */,
 				768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */,
+				765D0CB822C9D17900BA8283 /* NewsPostConfiguring.swift in Sources */,
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
 				763684FF22C1991F00A9DB98 /* HouseDetailsController.swift in Sources */,
 				7607AA4622BFE98600E2CC93 /* MapViewCell.swift in Sources */,
 				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
+				76FD44D922C9C46F00AA352F /* NewsCommentBoxCell.swift in Sources */,
 				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
 				766036CF22C46706007EEE66 /* ImageCache.swift in Sources */,
+				765D0CB522C9CC8200BA8283 /* NewsPost.swift in Sources */,
 				76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */,
+				76FD44D522C9C44400AA352F /* NewsLikeAndCommentCountCell.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
 				76F0D20C22C2F6C000FB07FF /* ReservationSuccessController.swift in Sources */,
 				7636850122C19BC100A9DB98 /* DividerLine.swift in Sources */,
+				76FD44D722C9C45700AA352F /* NewsCommentCell.swift in Sources */,
 				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,
 				76F0D20722C29ECE00FB07FF /* ReservationSummaryController.swift in Sources */,
 				7627B8A822BD64B600DD75F0 /* RegistrationController.swift in Sources */,
+				765D0CB022C9C6F100BA8283 /* ImageManager.swift in Sources */,
 				76C430F122C2873100D47AC6 /* RoomListController.swift in Sources */,
+				76FD44D322C9C41B00AA352F /* NewsUserAndBodyCell.swift in Sources */,
 				768E4D8D22BD5D17009CE688 /* User.swift in Sources */,
+				765D0CB222C9CA0200BA8283 /* Comment.swift in Sources */,
 				7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */,
 				76C1AB6D22BE99C100F4BDE3 /* DateExtensions.swift in Sources */,
 				76C430EF22C1FA5F00D47AC6 /* HousePhotoCell.swift in Sources */,
