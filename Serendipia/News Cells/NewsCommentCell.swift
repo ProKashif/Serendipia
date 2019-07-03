@@ -17,7 +17,9 @@ class NewsCommentCell: NewsCell {
 	func configure(comment: Comment) {
 		self.comment = comment
 		
-		commentTextView.text = "\(comment.user.name)\n\(comment.body)"
+		let attributedComment = NSMutableAttributedString(string: comment.user.name, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .bold)])
+		attributedComment.append(NSAttributedString(string: "\n\(comment.body)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .light)]))
+		commentTextView.attributedText = attributedComment
 		ImageManager.shared.fetchImage(for: comment.user.profilePhotoUrl) { [weak self] image, url in
 			guard url == comment.user.profilePhotoUrl else {
 				self?.profileImage.image = UIImage(named: "profileIcon")

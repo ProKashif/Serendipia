@@ -13,5 +13,9 @@ protocol NewsPostConfiguring {
 }
 
 
-class NewsCell: UITableViewCell {
+class NewsCell: UITableViewCell {	
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+		selectionStyle = .none
+	}
 }

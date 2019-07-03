@@ -18,13 +18,17 @@ class NewsTabController: UIViewController {
 
 extension NewsTabController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		if expandedSectionIndex == section {
+		if tableView.indexPathsForSelectedRows?.compactMap({ $0.section }).contains(section) ?? false {
 			return 3 + numberOfCommentsInSection(section)
 		} else {
 			return 2
 		}
 	}
 	
+	func numberOfSections(in tableView: UITableView) -> Int {
+		return posts.count
+	}
+
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let post = posts[indexPath.section]
 		var cellId: String = ""
@@ -42,15 +46,14 @@ extension NewsTabController: UITableViewDelegate, UITableViewDataSource {
 		if let cell = cell as? NewsPostConfiguring {
 			cell.configure(newsPost: post)
 		} else if let cell = cell as? NewsCommentCell {
-			cell.configure(comment: post.comments[indexPath.item])
+			cell.configure(comment: post.comments[indexPath.item - 2])
 		}
 		
 		return cell
-
 	}
 	
-	func numberOfSections(in tableView: UITableView) -> Int {
-		return posts.count
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		tableView.reloadSections(IndexSet(integer: indexPath.section), with: .automatic)
 	}
 	
 	private func numberOfCommentsInSection(_ section: Int) -> Int {

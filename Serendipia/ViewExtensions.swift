@@ -170,19 +170,36 @@ extension UIView {
 	}
 }
 
-@IBDesignable class DesignableTextView: UITextView {
-	// Rounded corner raius
-	@IBInspectable var cornerRadius: CGFloat {
-		get {
-			return self.layer.cornerRadius
-		}
-		set {
-			self.layer.cornerRadius = newValue
+extension URL {
+	var nsUrl: NSURL? { return NSURL(string: absoluteString) }
+}
 		}
 	}
 }
 
 
-extension URL {
-	var nsUrl: NSURL? { return NSURL(string: absoluteString) }
+@IBDesignable class DesignableTextView: UITextView {
+	@IBInspectable var topInset: CGFloat = 0 {
+		didSet {
+			contentInset = UIEdgeInsets(top: topInset, left: contentInset.left, bottom: contentInset.bottom, right: contentInset.right)
+		}
+	}
+	
+	@IBInspectable var bottmInset: CGFloat = 0 {
+		didSet {
+			contentInset = UIEdgeInsets(top: contentInset.top, left: contentInset.left, bottom: bottmInset, right: contentInset.right)
+		}
+	}
+	
+	@IBInspectable var leftInset: CGFloat = 0 {
+		didSet {
+			contentInset = UIEdgeInsets(top: contentInset.top, left: leftInset, bottom: contentInset.bottom, right: contentInset.right)
+		}
+	}
+	
+	@IBInspectable var rightInset: CGFloat = 0 {
+		didSet {
+			contentInset = UIEdgeInsets(top: contentInset.top, left: contentInset.left, bottom: contentInset.bottom, right: rightInset)
+		}
+	}
 }
