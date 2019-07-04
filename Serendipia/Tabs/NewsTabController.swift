@@ -54,7 +54,7 @@ extension NewsTabController: UITableViewDelegate, UITableViewDataSource {
 		
 		if let cell = cell as? NewsCommentBoxCell {
 			cell.commentAdded = commentAdded
-			cell.textFieldEditingBegan = { [weak self] _ in
+			cell.textFieldEditingBegan = { [weak self] in
 				self?.tableView.scrollToRow(at: indexPath, at: .middle, animated: true)
 			}
 		}

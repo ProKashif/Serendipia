@@ -659,6 +659,7 @@
                                             <constraint firstAttribute="trailing" secondItem="WCC-El-3bp" secondAttribute="trailing" constant="20" id="yLv-uR-ICZ"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="bookButton" destination="t7D-mD-KqG" id="Mgu-zU-SHC"/>
                                             <outlet property="cityLabel" destination="f1F-j7-w6M" id="OM2-KU-NwA"/>
                                             <outlet property="previewImage" destination="Vm2-rq-Ekz" id="2Ja-MU-6VQ"/>
                                             <outlet property="streetLabel" destination="Fr0-P4-gUp" id="I86-7k-elK"/>
