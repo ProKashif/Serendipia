@@ -226,3 +226,6 @@ extension UIColor {
 	}
 	
 }
+
+
+typealias Closure = () -> ()

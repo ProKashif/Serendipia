@@ -15,6 +15,9 @@ class NewsCommentBoxCell: NewsCell, NewsPostConfiguring, UITextFieldDelegate {
 	var newsPost: NewsPost?
 	@IBOutlet weak var textField: UITextField!
 	
+	var textFieldEditingBegan: Closure?
+	var textFieldEditingEnded: Closure?
+
 	func configure(newsPost: NewsPost) {
 		self.newsPost = newsPost
 	}
@@ -25,6 +28,14 @@ class NewsCommentBoxCell: NewsCell, NewsPostConfiguring, UITextFieldDelegate {
 			commentAdded?(comment, postId, self)
 		}
 		return true
+	}
+	
+	func textFieldDidEndEditing(_ textField: UITextField) {
+		textFieldEditingEnded?()
+	}
+	
+	func textFieldDidBeginEditing(_ textField: UITextField) {
+		textFieldEditingBegan?()
 	}
 	
 	override func prepareForReuse() {

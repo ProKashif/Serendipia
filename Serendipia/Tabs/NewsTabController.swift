@@ -49,14 +49,21 @@ extension NewsTabController: UITableViewDelegate, UITableViewDataSource {
 		if let cell = cell as? NewsPostConfiguring {
 			cell.configure(newsPost: post)
 		} else if let cell = cell as? NewsCommentCell {
-			cell.configure(comment: post.comments[indexPath.item - 2])
+   			cell.configure(comment: post.comments[indexPath.item - 2])
 		}
 		
 		if let cell = cell as? NewsCommentBoxCell {
 			cell.commentAdded = commentAdded
+			cell.textFieldEditingBegan = { [weak self] _ in
+				self?.tableView.scrollToRow(at: indexPath, at: .middle, animated: true)
+			}
 		}
 		
 		return cell
+	}
+	
+	func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+		view.endEditing(true)
 	}
 	
 	private func commentAdded(comment: String, postId: String, sender cell: UITableViewCell) {
