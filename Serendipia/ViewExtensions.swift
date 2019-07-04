@@ -173,7 +173,18 @@ extension UIView {
 extension URL {
 	var nsUrl: NSURL? { return NSURL(string: absoluteString) }
 }
+
+
+extension UIImage {
+	var noir: UIImage? {
+		let context = CIContext(options: nil)
+		guard let currentFilter = CIFilter(name: "CIPhotoEffectNoir") else { return nil }
+		currentFilter.setValue(CIImage(image: self), forKey: kCIInputImageKey)
+		if let output = currentFilter.outputImage,
+			let cgImage = context.createCGImage(output, from: output.extent) {
+			return UIImage(cgImage: cgImage, scale: scale, orientation: imageOrientation)
 		}
+		return nil
 	}
 }
 
@@ -181,25 +192,37 @@ extension URL {
 @IBDesignable class DesignableTextView: UITextView {
 	@IBInspectable var topInset: CGFloat = 0 {
 		didSet {
-			contentInset = UIEdgeInsets(top: topInset, left: contentInset.left, bottom: contentInset.bottom, right: contentInset.right)
+			textContainerInset.top = topInset
 		}
 	}
 	
 	@IBInspectable var bottmInset: CGFloat = 0 {
 		didSet {
-			contentInset = UIEdgeInsets(top: contentInset.top, left: contentInset.left, bottom: bottmInset, right: contentInset.right)
+			textContainerInset.bottom = bottmInset
 		}
 	}
 	
 	@IBInspectable var leftInset: CGFloat = 0 {
 		didSet {
-			contentInset = UIEdgeInsets(top: contentInset.top, left: leftInset, bottom: contentInset.bottom, right: contentInset.right)
+			textContainerInset.left = leftInset
 		}
 	}
 	
 	@IBInspectable var rightInset: CGFloat = 0 {
 		didSet {
-			contentInset = UIEdgeInsets(top: contentInset.top, left: contentInset.left, bottom: contentInset.bottom, right: rightInset)
+			textContainerInset.right = rightInset
 		}
 	}
+}
+
+
+extension UIColor {
+	class var brownishGrey: UIColor {
+		return UIColor(white: 117.0 / 255.0, alpha: 1.0)
+	}
+	
+	class var appOrange: UIColor {
+		return UIColor(red: 250.0 / 255.0, green: 145.0 / 255.0, blue: 23.0 / 255.0, alpha: 1.0)
+	}
+	
 }

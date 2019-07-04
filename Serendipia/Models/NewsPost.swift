@@ -8,12 +8,16 @@
 
 import Foundation
 
-struct NewsPost {
+struct NewsPost: Equatable {
 	let user: User
 	let body: String
 	let id: String
-	let comments: [Comment]
+	var comments: [Comment]
 	var likes: Set<User>
+	
+	static func == (lhs: NewsPost, rhs: NewsPost) -> Bool {
+		return lhs.id == rhs.id
+	}
 	
 	func likedByUser(_ user: User) -> Bool {
 		return likes.contains { $0 == user }

@@ -11,5 +11,5 @@ import Foundation
 struct Comment {
 	let user: User
 	let body: String
-	let id: String
+	let id: String?
 }

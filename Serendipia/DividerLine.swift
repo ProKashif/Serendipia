@@ -12,7 +12,6 @@ class DividerLine: UIView {
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		
-		autoSetDimension(.height, toSize: 1)
 		backgroundColor = .lightGray
 		alpha = 0.75
 	}

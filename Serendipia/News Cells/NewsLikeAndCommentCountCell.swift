@@ -14,16 +14,12 @@ class NewsLikeAndCommentCountCell: NewsCell, NewsPostConfiguring {
 	@IBOutlet weak var commentCountLabel: UILabel!
 	private var post: NewsPost?
 	
-	required init?(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-		selectionStyle = .default
-	}
-	
 	func configure(newsPost: NewsPost) {
 		guard let loggedInUser = UserManager.shared.loggedInUser else { return }
 		post = newsPost
 		likeIcon.setImage(UIImage(named: newsPost.likedByUser(loggedInUser) ? "heart" : "heart_empty"), for: .normal)
 		likeCountLabel.text = "\(newsPost.likes.count)"
+		likeCountLabel.textColor = newsPost.likes.count > 0 ? .appOrange : .darkGray
 		commentCountLabel.text = "\(newsPost.comments.count) comments"
 	}
 	
