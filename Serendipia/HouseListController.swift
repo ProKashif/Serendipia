@@ -26,6 +26,8 @@ class HouseListController: UIViewController, ReservationBuilding {
 			}
 		}
 	}
+	var city: String?
+	var searchDates: String?
 	
 	@IBAction func changeSearchTapped() {
 		navigationController?.popViewController(animated: true)
@@ -51,6 +53,9 @@ class HouseListController: UIViewController, ReservationBuilding {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		dataSource = ListHouseDataSource()
+		if let city = city, let searchDates = searchDates {
+			locationAndDateLabel.text = "\(city), \(searchDates)"
+		}
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -82,10 +87,6 @@ private class ListHouseDataSource: NSObject, HouseDataSource {
 		}
 		return cell
 	}
-	
-	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-		return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
-	}
 }
 
 
@@ -113,10 +114,6 @@ private class MapHouseDataSource: NSObject, HouseDataSource, UICollectionViewDel
 			return CGSize(width: collectionView.frame.width, height: height)
 		}
 		return .zero
-	}
-	
-	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-		return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
 	}
 }
 
