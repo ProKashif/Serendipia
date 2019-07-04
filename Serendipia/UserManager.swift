@@ -14,6 +14,7 @@ class UserManager {
 	private let loggedInUserKey = "loggedInUser"
 	var loggedInUser: User? {
 		set {
+			guard let newValue = newValue else { UserDefaults.standard.removeObject(forKey: loggedInUserKey); return }
 			if let data = try? PropertyListEncoder().encode(newValue) {
 				UserDefaults.standard.set(data, forKey: loggedInUserKey)
 			}
