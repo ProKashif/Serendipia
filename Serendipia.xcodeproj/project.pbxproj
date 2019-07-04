@@ -25,6 +25,7 @@
 		766036CF22C46706007EEE66 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766036CE22C46706007EEE66 /* ImageCache.swift */; };
 		766914FF22CD65DE00F7B68C /* NewsPostDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766914FE22CD65DE00F7B68C /* NewsPostDataManager.swift */; };
 		7669150322CD7E3700F7B68C /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669150222CD7E3700F7B68C /* TestData.swift */; };
+		7669150522CDCF0D00F7B68C /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669150422CDCF0D00F7B68C /* FilterController.swift */; };
 		768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8822BD5220009CE688 /* ViewExtensions.swift */; };
 		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
 		768E4D8D22BD5D17009CE688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8C22BD5D17009CE688 /* User.swift */; };
@@ -67,6 +68,7 @@
 		766036CE22C46706007EEE66 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		766914FE22CD65DE00F7B68C /* NewsPostDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPostDataManager.swift; sourceTree = "<group>"; };
 		7669150222CD7E3700F7B68C /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		7669150422CDCF0D00F7B68C /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
 		768E4D8822BD5220009CE688 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		768E4D8C22BD5D17009CE688 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				76C430F222C28AD000D47AC6 /* RoomListCell.swift */,
 				76F0D20622C29ECE00FB07FF /* ReservationSummaryController.swift */,
 				76F0D20B22C2F6C000FB07FF /* ReservationSuccessController.swift */,
+				7669150422CDCF0D00F7B68C /* FilterController.swift */,
 				76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */,
 				765D0CB322C9CB6100BA8283 /* Tabs */,
 				7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */,
@@ -364,6 +367,7 @@
 				768E4D8922BD5220009CE688 /* ViewExtensions.swift in Sources */,
 				766036CF22C46706007EEE66 /* ImageCache.swift in Sources */,
 				765D0CB522C9CC8200BA8283 /* NewsPost.swift in Sources */,
+				7669150522CDCF0D00F7B68C /* FilterController.swift in Sources */,
 				76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */,
 				76FD44D522C9C44400AA352F /* NewsLikeAndCommentCountCell.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,

@@ -537,6 +537,80 @@
             </objects>
             <point key="canvasLocation" x="112.8" y="-1412.7436281859073"/>
         </scene>
+        <!--Filters-->
+        <scene sceneID="QIb-wU-3o7">
+            <objects>
+                <viewController title="Filters" id="A4y-Bp-tWO" customClass="FilterController" customModule="Serendipia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fh8-9v-lBg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyQ-ro-vNk" customClass="DesignableButton" customModule="Serendipia" customModuleProvider="target">
+                                <rect key="frame" x="60" y="817" width="294" height="45"/>
+                                <color key="backgroundColor" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="NMW-Ts-Gg5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Apply Filters"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7zD-NK-PoP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="713"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filter" textLabel="drS-Fo-gIA" style="IBUITableViewCellStyleDefault" id="qZi-Sd-guJ" customClass="FilterCell" customModule="Serendipia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qZi-Sd-guJ" id="5EN-wj-GE5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="drS-Fo-gIA">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="A4y-Bp-tWO" id="DrK-vF-fV8"/>
+                                    <outlet property="delegate" destination="A4y-Bp-tWO" id="Ynz-bk-gcf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dF1-xX-ekA" firstAttribute="bottom" secondItem="TyQ-ro-vNk" secondAttribute="bottom" id="8qC-Ju-nhC"/>
+                            <constraint firstItem="7zD-NK-PoP" firstAttribute="leading" secondItem="dF1-xX-ekA" secondAttribute="leading" id="J3i-JH-2hn"/>
+                            <constraint firstItem="TyQ-ro-vNk" firstAttribute="top" secondItem="7zD-NK-PoP" secondAttribute="bottom" constant="16" id="JPB-gb-mW4"/>
+                            <constraint firstItem="TyQ-ro-vNk" firstAttribute="leading" secondItem="dF1-xX-ekA" secondAttribute="leading" constant="60" id="RHh-CU-VGQ"/>
+                            <constraint firstItem="7zD-NK-PoP" firstAttribute="trailing" secondItem="dF1-xX-ekA" secondAttribute="trailing" id="U31-Bf-gRP"/>
+                            <constraint firstItem="7zD-NK-PoP" firstAttribute="top" secondItem="dF1-xX-ekA" secondAttribute="top" id="kvt-pn-jtF"/>
+                            <constraint firstItem="dF1-xX-ekA" firstAttribute="trailing" secondItem="TyQ-ro-vNk" secondAttribute="trailing" constant="60" id="pwK-rb-2KF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dF1-xX-ekA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filters" id="mZJ-Ss-OWd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="7UX-h5-wIN">
+                            <connections>
+                                <action selector="dismiss" destination="A4y-Bp-tWO" id="7dj-hh-xKY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6h-qc-YoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947.826086956522" y="-2105.3571428571427"/>
+        </scene>
         <!--House List Controller-->
         <scene sceneID="qyH-a5-K7y">
             <objects>
@@ -559,6 +633,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="filtersTapped" destination="ch3-gD-kg9" eventType="touchUpInside" id="zOy-zO-gvV"/>
+                                                    <segue destination="spr-fj-ExA" kind="presentation" id="ZKC-Gy-F2s"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW7-HB-QPK">
@@ -659,7 +734,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="360"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="Vm2-rq-Ekz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="237.00000000000011"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="237"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="236.99999999999989" id="f2W-Tn-455"/>
                                                                     </constraints>
@@ -1128,7 +1203,7 @@ community</string>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="iIw-xy-oc2">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="362" height="220.00000000000011"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="362" height="220"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </view>
@@ -1370,7 +1445,7 @@ community</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="202"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-YT-g8f">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="202.00000000000011"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="202"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-ve-vbR">
                                                                     <rect key="frame" x="132.33333333333334" y="20" width="104" height="24"/>
@@ -1754,6 +1829,24 @@ community</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uO-v1-rmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4488.4057971014499" y="-1412.9464285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FMb-hE-Fo7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="spr-fj-ExA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YXj-sG-msl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A4y-Bp-tWO" kind="relationship" relationship="rootViewController" id="iVb-ea-3qT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Haw-2A-S4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.68115942029" y="-2105.3571428571427"/>
         </scene>
     </scenes>
     <resources>

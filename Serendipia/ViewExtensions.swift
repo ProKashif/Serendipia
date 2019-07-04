@@ -232,3 +232,41 @@ extension UIColor {
 
 
 typealias Closure = () -> ()
+
+
+//extension UIImage {
+//	static func radioButton(color: UIColor, radius: CGFloat, filled: Bool) -> UIImage? {
+//		let view = DesignableView()
+//		view.borderColor = color
+//		view.borderWidth = 2
+//		view.cornerRadius = radius
+//		view.autoSetDimensions(to: CGSize(width: radius * 2, height: radius * 2))
+//
+//		if filled {
+//			let fillView = DesignableView()
+//			fillView.cornerRadius = radius
+//			fillView.borderColor = color
+//			fillView.borderWidth = radius/4
+//			view.addSubview(fillView)
+//			fillView.autoSetDimensions(to: CGSize(width: radius, height: radius))
+//			fillView.autoCenterInSuperview()
+//		}
+//
+//		return view.image
+//	}
+//
+//}
+//
+//
+//extension UIView {
+//	var image: UIImage? {
+//		UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, 0.0)
+//		defer { UIGraphicsEndImageContext() }
+//		if let context = UIGraphicsGetCurrentContext() {
+//			layer.render(in: context)
+//			let image = UIGraphicsGetImageFromCurrentImageContext()
+//			return image
+//		}
+//		return nil
+//	}
+//}

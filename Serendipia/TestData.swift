@@ -105,3 +105,19 @@ class TestPosts {
 		
 		]
 }
+
+
+class TestFilters {
+	let testFilters = [
+		Filter(name: "Washer/Dryer", selected: true),
+		Filter(name: "WiFi", selected: true),
+		Filter(name: "Parking", selected: false),
+		Filter(name: "Pool", selected: false),
+		Filter(name: "Terrace", selected: false),
+		Filter(name: "Private Rooms", selected: false),
+		Filter(name: "Cleaning Services", selected: false),
+		Filter(name: "24 Hours Front Desk", selected: false),
+		Filter(name: "Breakfast Included", selected: false),
+		Filter(name: "Other", selected: false)
+	]
+}
