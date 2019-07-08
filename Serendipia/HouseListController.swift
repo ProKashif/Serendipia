@@ -50,10 +50,6 @@ class HouseListController: UIViewController, ReservationBuilding {
 		collectionView?.reloadData()
 	}
 	
-	@IBAction func filtersTapped() {
-		
-	}
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		dataSource = ListHouseDataSource()
@@ -67,6 +63,12 @@ class HouseListController: UIViewController, ReservationBuilding {
 		if var reservationBuilder = segue.destination as? ReservationBuilding, let cell = sender as? UICollectionViewCell {
 			reservation?.house = houses[collectionView?.indexPath(for: cell)?.row ?? 0]
 			reservationBuilder.reservation = reservation
+		}
+		
+		if let filterController = segue.destination as? FilterController {
+			filterController.filtersSelected = { selectedFilters in
+				//TODO: handle filters
+			}
 		}
 	}
 	

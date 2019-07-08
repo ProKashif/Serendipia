@@ -13,12 +13,19 @@ struct Filter {
 	var selected: Bool
 }
 
-class FilterController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FilterController: UIViewController {
 	var filters = TestFilters().testFilters
 	var selectedFilters: [Filter] {
 		return filters.filter { $0.selected }
 	}
+	var filtersSelected: (([Filter]) -> ())?
 	
+	@IBAction private func applyFiltersTapped() {
+		filtersSelected?(selectedFilters)
+	}
+}
+
+extension FilterController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return filters.count
 	}
@@ -41,7 +48,6 @@ class FilterController: UIViewController, UITableViewDelegate, UITableViewDataSo
 		tableView.cellForRow(at: indexPath)?.accessoryType = filters[indexPath.row].selected ? .checkmark : .none
 	}
 }
-
 
 class FilterCell: UITableViewCell {
 	func configure(filter: Filter) {
