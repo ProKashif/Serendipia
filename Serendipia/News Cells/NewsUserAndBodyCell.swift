@@ -17,10 +17,14 @@ class NewsUserAndBodyCell: NewsCell, NewsPostConfiguring {
 	func configure(newsPost: NewsPost) {
 		profileNameLabel.text = newsPost.user.name
 		photoUrl = newsPost.user.profilePhotoUrl
-		ImageManager.shared.fetchImage(for: newsPost.user.profilePhotoUrl) { [weak self] image, url in
-			if url == self?.photoUrl {
-				self?.profileImage.image = image
-			}
+//		ImageManager.shared.fetchImage(for: newsPost.user.profilePhotoUrl) { [weak self] image, url in
+//			if url == self?.photoUrl {
+//				self?.profileImage.image = image
+//			}
+//		}
+		
+		if let photoUrl = photoUrl {
+			profileImage.af_setImage(withURL: photoUrl, placeholderImage: UIImage.profileIcon)
 		}
 		bodyTextView.text = newsPost.body
 	}

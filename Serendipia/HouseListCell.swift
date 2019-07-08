@@ -8,6 +8,7 @@
 
 import UIKit
 import PureLayout
+import AlamofireImage
 
 class HouseListCell: UICollectionViewCell {
 	@IBOutlet private weak var previewImage: UIImageView!
@@ -16,16 +17,26 @@ class HouseListCell: UICollectionViewCell {
 	@IBOutlet private weak var bookButton: UIButton!
 	
 	private var houseId: String?
-	private var houseImageCache = ImageCache.shared
-	
-	var houseSelected: ((String) -> ())?
+	private(set) var enabled = true {
+		didSet {
+			if enabled {
+				bookButton.backgroundColor = .darkishPink
+				streetLabel.textColor = .darkishPink
+				removePropertyUnavailableView()
+			} else {
+				bookButton.backgroundColor = .lightGray
+				streetLabel.textColor = .lightGray
+				addPropertyUnavailableView()
+			}
+		}
+	}
 	
 	override func prepareForReuse() {
 		super.prepareForReuse()
-		houseSelected = nil
+		previewImage.af_cancelImageRequest()
 		previewImage.image = UIImage(named: "house")
-		cityLabel.text = "xxx"
-		streetLabel.text = "xxx"
+		cityLabel.text = "Loading..."
+		streetLabel.text = "Loading..."
 	}
 	
 	func configure(house: House, enabled: Bool = true) {
@@ -36,43 +47,11 @@ class HouseListCell: UICollectionViewCell {
 			return
 		}
 		
-		func finalImageFromImage(_ image: UIImage?) -> UIImage? {
-			return enabled ? image : image?.noir
-		}
-		
-		if let image = houseImageCache.image(for: imageUrl) {
-			previewImage.image = finalImageFromImage(image)
-		} else {
-			DispatchQueue.global(qos: .userInteractive).async { [weak self] in
-				if let imageData = try? Data(contentsOf: house.photoUrls[0]) {
-					if house.id == self?.houseId {
-						DispatchQueue.main.async { [weak self] in
-							guard let image = UIImage(data: imageData) else {
-								//error
-								return
-							}
-							self?.houseImageCache.cacheImage(image, for: imageUrl)
-							self?.previewImage.image = finalImageFromImage(image)
-						}
-					}
-				}
-			}
-		}
-		
+		previewImage.af_setImage(withURL: imageUrl, placeholderImage: UIImage(named: "house"), filter: enabled ? nil : NoirFilter())
 		cityLabel.text = house.address.city
 		streetLabel.text = house.address.houseNumber + " " + house.address.street
 		
-		if enabled {
-			bookButton.backgroundColor = .darkishPink
-			streetLabel.textColor = .darkishPink
-			removePropertyUnavailableView()
-		} else {
-			bookButton.backgroundColor = .lightGray
-			streetLabel.textColor = .lightGray
-			addPropertyUnavailableView()
-		}
-		
-		isUserInteractionEnabled = enabled
+		self.enabled = enabled
 	}
 	
 	private func addPropertyUnavailableView() {
@@ -112,3 +91,5 @@ class HouseListCell: UICollectionViewCell {
 		return view
 	}()
 }
+
+

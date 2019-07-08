@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import AlamofireImage
 
 //TODO: figure out why this won't work as an extension on UIView
 @IBDesignable class DesignableView: UIView {
@@ -270,3 +271,13 @@ typealias Closure = () -> ()
 //		return nil
 //	}
 //}
+
+extension UIImage {
+	static var profileIcon: UIImage? { return self.init(named: "profileIcon") }
+}
+
+
+struct NoirFilter: CoreImageFilter {
+	var filterName: String = "CIPhotoEffectNoir"
+	var parameters: [String : Any] = [:]
+}

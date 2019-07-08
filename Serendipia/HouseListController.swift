@@ -30,6 +30,10 @@ class HouseListController: UIViewController, ReservationBuilding {
 	var searchDates: String?
 	
 	@IBAction func changeSearchTapped() {
+		popToSearch()
+	}
+	
+	private func popToSearch() {
 		navigationController?.popViewController(animated: true)
 	}
 	
@@ -59,10 +63,20 @@ class HouseListController: UIViewController, ReservationBuilding {
 	}
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		super.prepare(for: segue, sender: sender)
 		if var reservationBuilder = segue.destination as? ReservationBuilding, let cell = sender as? UICollectionViewCell {
 			reservation?.house = houses[collectionView?.indexPath(for: cell)?.row ?? 0]
 			reservationBuilder.reservation = reservation
 		}
+	}
+	
+	override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+		if let cell = sender as? HouseListCell, cell.enabled == false {
+			popToSearch()
+			return false
+		}
+		
+		return true
 	}
 }
 
@@ -83,7 +97,7 @@ private class ListHouseDataSource: NSObject, HouseDataSource {
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "house", for: indexPath)
 		if let cell = cell as? HouseListCell {
-			cell.configure(house: houses[indexPath.row])
+			cell.configure(house: houses[indexPath.row], enabled: false)
 		}
 		return cell
 	}

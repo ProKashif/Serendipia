@@ -8,4 +8,6 @@ target 'Serendipia' do
   # Pods for Serendipia
 	pod 'FSCalendar'
 	pod 'PureLayout'
+	pod 'Alamofire'
+	pod 'AlamofireImage'
 end

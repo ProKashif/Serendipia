@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class NewsCommentCell: NewsCell {
 	@IBOutlet weak var commentTextView: UITextView!
@@ -20,14 +21,15 @@ class NewsCommentCell: NewsCell {
 		let attributedComment = NSMutableAttributedString(string: comment.user.name, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .bold)])
 		attributedComment.append(NSAttributedString(string: "\n\(comment.body)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .light)]))
 		commentTextView.attributedText = attributedComment
-		ImageManager.shared.fetchImage(for: comment.user.profilePhotoUrl) { [weak self] image, url in
-			guard url == comment.user.profilePhotoUrl else {
-				self?.profileImage.image = UIImage(named: "profileIcon")
-				return
-			}
-			
-			self?.profileImage.image = image
-		}
+//		ImageManager.shared.fetchImage(for: comment.user.profilePhotoUrl) { [weak self] image, url in
+//			guard url == comment.user.profilePhotoUrl else {
+//				self?.profileImage.image = UIImage(named: "profileIcon")
+//				return
+//			}
+//
+//			self?.profileImage.image.
+//		}
+		profileImage.af_setImage(withURL: comment.user.profilePhotoUrl, placeholderImage: UIImage.profileIcon)
 	}
 }
 

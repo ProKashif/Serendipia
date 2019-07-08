@@ -41,7 +41,7 @@ class HouseDetailsController: UIViewController, ReservationBuilding {
 		houseAmenitiesScroller?.dataSource = houseAmenitiesDataSource
 		
 		cityLabel.text = house?.address.city
-		addressLabel.text = (house?.address.houseNumber ?? "") + " " + (house?.address.street ?? "")
+		addressLabel.text = house?.address.streetAndHouseNumber
 		descriptionLabel.text = house?.description
 		houseManagerLabel.text = house?.manager.name
 		phoneNumberLabel.text = house?.manager.phoneNumber

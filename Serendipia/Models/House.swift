@@ -48,7 +48,7 @@ struct Address {
 	let city: String
 	let houseNumber: String
 	let street: String
-	var streetAndHouseNumber: String { return "\(houseNumber), \(street)"}
+	var streetAndHouseNumber: String { return "\(houseNumber) \(street)"}
 }
 
 

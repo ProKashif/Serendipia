@@ -1,15 +1,22 @@
 PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
   - FSCalendar (2.8.0)
   - PureLayout (3.1.4)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
   - FSCalendar
   - PureLayout
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
 
-PODFILE CHECKSUM: 87d1c865ae74cbc4d5293da56afb32bd4492ddff
+PODFILE CHECKSUM: a940d560214c48f5a6730be7371a472b2d49f10e
 
 COCOAPODS: 1.4.0

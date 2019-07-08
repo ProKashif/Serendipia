@@ -29,8 +29,9 @@ class ReservationSummaryController: UIViewController, ReservationBuilding {
 	}
 	
 	func configure(reservation: Reservation) {
-		let address = reservation.house?.address
-		houseLabel.text = "House: \(address?.city ?? "?"), \(address?.houseNumber ?? "?") \(address?.street ?? "?")"
+		if let address = reservation.house?.address {
+			houseLabel.text = "House: \(address.city), \(address.streetAndHouseNumber)"
+		}
 		datesLabel.text = "Dates: \(Date.rangeString(date1: reservation.startDate, date2: reservation.startDate.daysAfter(reservation.length)!))"
 		numberOfNightsLabel.text = "\(reservation.length) nights"
 		rateLabel.text = "\(reservation.room?.rates.first?.price ?? 0)/night"
