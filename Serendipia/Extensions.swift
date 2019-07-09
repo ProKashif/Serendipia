@@ -218,15 +218,27 @@ extension UIImage {
 
 
 extension UIColor {
-	class var brownishGrey: UIColor {
+	@nonobjc class var brownishGrey: UIColor {
 		return UIColor(white: 117.0 / 255.0, alpha: 1.0)
 	}
 	
-	class var appOrange: UIColor {
+	@nonobjc class var appOrange: UIColor {
 		return UIColor(red: 250.0 / 255.0, green: 145.0 / 255.0, blue: 23.0 / 255.0, alpha: 1.0)
 	}
 	
-	class var darkishPink: UIColor {
+	@nonobjc class var paypalBlue: UIColor {
+		return UIColor(red: 68.0 / 255.0, green: 105.0 / 255.0, blue: 176.0 / 255.0, alpha: 1.0)
+	}
+	
+	@nonobjc class var dustyOrange: UIColor {
+		return UIColor(red: 241.0 / 255.0, green: 122.0 / 255.0, blue: 54.0 / 255.0, alpha: 1.0)
+	}
+	
+	@nonobjc class var azure: UIColor {
+		return UIColor(red: 3.0 / 255.0, green: 169.0 / 255.0, blue: 244.0 / 255.0, alpha: 1.0)
+	}
+	
+	@nonobjc class var darkishPink: UIColor {
 		return UIColor(red: 237.0 / 255.0, green: 45.0 / 255.0, blue: 141.0 / 255.0, alpha: 1.0)
 	}
 }
@@ -274,10 +286,19 @@ typealias Closure = () -> ()
 
 extension UIImage {
 	static var profileIcon: UIImage? { return self.init(named: "profileIcon") }
+	static var chevron: UIImage? { return self.init(named: "chevron") }
 }
 
 
 struct NoirFilter: CoreImageFilter {
 	var filterName: String = "CIPhotoEffectNoir"
 	var parameters: [String : Any] = [:]
+}
+
+
+extension UIView {
+	func roundCorners(_ corners: CACornerMask, radii: CGFloat = 15) {
+		layer.cornerRadius = radii
+		layer.maskedCorners = corners
+	}
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pBF-EW-Qnq">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -251,14 +251,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-728.98550724637687" y="-731.25"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="rMa-wR-dfD">
-            <objects>
-                <tableViewController id="FEN-pq-47o" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lTV-yC-cOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1368.1159420289855" y="-1413.6160714285713"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="mhO-Or-5wr">
@@ -730,7 +722,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="360"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="Vm2-rq-Ekz">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="237"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="237.00000000000011"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="236.99999999999989" id="f2W-Tn-455"/>
                                                                     </constraints>
@@ -1199,7 +1191,7 @@ community</string>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="iIw-xy-oc2">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="362" height="220"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="362" height="220.00000000000011"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </view>
@@ -1441,7 +1433,7 @@ community</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="202"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-YT-g8f">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="202"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="112.33333333333333" height="202.00000000000011"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-ve-vbR">
                                                                     <rect key="frame" x="132.33333333333334" y="20" width="104" height="24"/>
@@ -1656,8 +1648,8 @@ community</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGH-VE-4sL" customClass="DesignableButton" customModule="Serendipia" customModuleProvider="target">
-                                                <rect key="frame" x="44" y="501" width="326" height="41"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGH-VE-4sL" customClass="DesignableButton" customModule="Serendipia" customModuleProvider="target">
+                                                <rect key="frame" x="44" y="501" width="326" height="45"/>
                                                 <color key="backgroundColor" red="0.85486602779999998" green="0.25454637409999997" blue="0.54467779400000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="41" id="kNJ-6R-dbV"/>
@@ -1671,7 +1663,7 @@ community</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="dw3-jb-f14" kind="show" id="OxX-OP-L6q"/>
+                                                    <segue destination="9Zk-yD-nLi" kind="show" id="NuL-eZ-vUf"/>
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tt-Ob-Rej">
@@ -1782,10 +1774,10 @@ community</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="houseConfirmation" translatesAutoresizingMaskIntoConstraints="NO" id="hao-KJ-Aev">
-                                <rect key="frame" x="91" y="474" width="232" height="200"/>
+                                <rect key="frame" x="91" y="523" width="232" height="200"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your reservation is confirmed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AvF-4W-Pgt">
-                                <rect key="frame" x="100" y="224" width="214" height="98"/>
+                                <rect key="frame" x="100" y="180" width="214" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="5Ms-7Q-9so"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="nhv-Na-fok"/>
@@ -1795,7 +1787,7 @@ community</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation 123456789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tna-3C-PZw">
-                                <rect key="frame" x="111.00000000000001" y="330" width="192.33333333333337" height="21"/>
+                                <rect key="frame" x="111.00000000000001" y="286" width="192.33333333333337" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1824,7 +1816,7 @@ community</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uO-v1-rmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4488.4057971014499" y="-1412.9464285714284"/>
+            <point key="canvasLocation" x="5197" y="-1412"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FMb-hE-Fo7">
@@ -1843,6 +1835,32 @@ community</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Haw-2A-S4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1037.68115942029" y="-2105.3571428571427"/>
+        </scene>
+        <!--Payment Form Picker Controller-->
+        <scene sceneID="dM3-PZ-T5Z">
+            <objects>
+                <viewController id="9Zk-yD-nLi" customClass="PaymentFormPickerController" customModule="Serendipia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hpF-aK-jiG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-6M-IpU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KQG-05-CUE"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cMg-6M-IpU" id="PWL-br-lMO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEJ-XO-GNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4411.594202898551" y="-1412.2767857142856"/>
         </scene>
     </scenes>
     <resources>

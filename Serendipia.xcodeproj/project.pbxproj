@@ -24,6 +24,9 @@
 		766914FF22CD65DE00F7B68C /* NewsPostDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766914FE22CD65DE00F7B68C /* NewsPostDataManager.swift */; };
 		7669150322CD7E3700F7B68C /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669150222CD7E3700F7B68C /* TestData.swift */; };
 		7669150522CDCF0D00F7B68C /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7669150422CDCF0D00F7B68C /* FilterController.swift */; };
+		76705FDA22D2C9CD00B4B018 /* PaymentFormPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76705FD922D2C9CD00B4B018 /* PaymentFormPickerController.swift */; };
+		76705FDD22D2CD6000B4B018 /* PaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76705FDC22D2CD6000B4B018 /* PaymentType.swift */; };
+		76705FDF22D2D33200B4B018 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76705FDE22D2D33200B4B018 /* Payment.swift */; };
 		768E4D8922BD5220009CE688 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8822BD5220009CE688 /* Extensions.swift */; };
 		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
 		768E4D8D22BD5D17009CE688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8C22BD5D17009CE688 /* User.swift */; };
@@ -65,6 +68,9 @@
 		766914FE22CD65DE00F7B68C /* NewsPostDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPostDataManager.swift; sourceTree = "<group>"; };
 		7669150222CD7E3700F7B68C /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		7669150422CDCF0D00F7B68C /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
+		76705FD922D2C9CD00B4B018 /* PaymentFormPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFormPickerController.swift; sourceTree = "<group>"; };
+		76705FDC22D2CD6000B4B018 /* PaymentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentType.swift; sourceTree = "<group>"; };
+		76705FDE22D2D33200B4B018 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		768E4D8822BD5220009CE688 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		768E4D8C22BD5D17009CE688 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -152,6 +158,16 @@
 			path = "Data Managers";
 			sourceTree = "<group>";
 		};
+		76705FDB22D2CD4900B4B018 /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				76705FD922D2C9CD00B4B018 /* PaymentFormPickerController.swift */,
+				76705FDC22D2CD6000B4B018 /* PaymentType.swift */,
+				76705FDE22D2D33200B4B018 /* Payment.swift */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
 		76C1AB7222BECD8B00F4BDE3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +215,7 @@
 				76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */,
 				763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */,
 				7607AA4522BFE98600E2CC93 /* MapViewCell.swift */,
+				76705FDB22D2CD4900B4B018 /* Payments */,
 				76C1AB7322BED4AA00F4BDE3 /* HouseListCell.swift */,
 				765D0CB622C9CF6E00BA8283 /* News Cells */,
 				76C430F022C2873100D47AC6 /* RoomListController.swift */,
@@ -354,12 +371,14 @@
 				7627B8AC22BD66C400DD75F0 /* NewsTabController.swift in Sources */,
 				76C430F322C28AD000D47AC6 /* RoomListCell.swift in Sources */,
 				7627B8B022BD66E000DD75F0 /* ProfileTabController.swift in Sources */,
+				76705FDD22D2CD6000B4B018 /* PaymentType.swift in Sources */,
 				768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */,
 				765D0CB822C9D17900BA8283 /* NewsPostConfiguring.swift in Sources */,
 				76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */,
 				763684FF22C1991F00A9DB98 /* HouseDetailsController.swift in Sources */,
 				766914FF22CD65DE00F7B68C /* NewsPostDataManager.swift in Sources */,
 				7607AA4622BFE98600E2CC93 /* MapViewCell.swift in Sources */,
+				76705FDA22D2C9CD00B4B018 /* PaymentFormPickerController.swift in Sources */,
 				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
 				76FD44D922C9C46F00AA352F /* NewsCommentBoxCell.swift in Sources */,
 				768E4D8922BD5220009CE688 /* Extensions.swift in Sources */,
@@ -369,6 +388,7 @@
 				76FD44D522C9C44400AA352F /* NewsLikeAndCommentCountCell.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
 				76F0D20C22C2F6C000FB07FF /* ReservationSuccessController.swift in Sources */,
+				76705FDF22D2D33200B4B018 /* Payment.swift in Sources */,
 				7636850122C19BC100A9DB98 /* DividerLine.swift in Sources */,
 				76FD44D722C9C45700AA352F /* NewsCommentCell.swift in Sources */,
 				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,

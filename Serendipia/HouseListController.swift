@@ -99,7 +99,7 @@ private class ListHouseDataSource: NSObject, HouseDataSource {
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "house", for: indexPath)
 		if let cell = cell as? HouseListCell {
-			cell.configure(house: houses[indexPath.row], enabled: false)
+			cell.configure(house: houses[indexPath.row], enabled: true)
 		}
 		return cell
 	}

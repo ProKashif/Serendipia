@@ -6,7 +6,7 @@
 //  Copyright © 2019 Marty Ulrich. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class TestUsers {
 	static func jLo() -> User {
@@ -119,5 +119,13 @@ class TestFilters {
 		Filter(name: "24 Hours Front Desk", selected: false),
 		Filter(name: "Breakfast Included", selected: false),
 		Filter(name: "Other", selected: false)
+	]
+}
+
+
+class TestPayments {
+	let testPayments = [
+		Payment(type: .paypal, title: "PayPal", color: .paypalBlue),
+		Payment(type: .creditCard, title: "Credit Card", color: .darkishPink),
 	]
 }
