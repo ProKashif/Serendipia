@@ -18,6 +18,9 @@
 		763684FF22C1991F00A9DB98 /* HouseDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */; };
 		7636850122C19BC100A9DB98 /* DividerLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636850022C19BC100A9DB98 /* DividerLine.swift */; };
 		7636850322C1E02900A9DB98 /* HouseAmenityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */; };
+		76400AB822D5B8890071FACC /* RegistrationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76400AB722D5B8890071FACC /* RegistrationField.swift */; };
+		76400ABA22D5C4870071FACC /* RegistrationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76400AB922D5C4870071FACC /* RegistrationEntry.swift */; };
+		76400ABC22D6EA0B0071FACC /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76400ABB22D6EA0B0071FACC /* RegistrationForm.swift */; };
 		765D0CB222C9CA0200BA8283 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D0CB122C9CA0200BA8283 /* Comment.swift */; };
 		765D0CB522C9CC8200BA8283 /* NewsPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D0CB422C9CC8200BA8283 /* NewsPost.swift */; };
 		765D0CB822C9D17900BA8283 /* NewsPostConfiguring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D0CB722C9D17900BA8283 /* NewsPostConfiguring.swift */; };
@@ -37,6 +40,16 @@
 		76C430EF22C1FA5F00D47AC6 /* HousePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */; };
 		76C430F122C2873100D47AC6 /* RoomListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C430F022C2873100D47AC6 /* RoomListController.swift */; };
 		76C430F322C28AD000D47AC6 /* RoomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C430F222C28AD000D47AC6 /* RoomListCell.swift */; };
+		76E96B3622DE4724000ED857 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76E96B2E22DE4724000ED857 /* CircularStd-Book.otf */; };
+		76E96B3722DE4724000ED857 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76E96B2F22DE4724000ED857 /* CircularStd-Black.otf */; };
+		76E96B3822DE4724000ED857 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76E96B3022DE4724000ED857 /* CircularStd-Bold.otf */; };
+		76E96B3922DE4724000ED857 /* CircularStd-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76E96B3122DE4724000ED857 /* CircularStd-BookItalic.otf */; };
+		76E96B3A22DE4724000ED857 /* CircularStd-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76E96B3222DE4724000ED857 /* CircularStd-BlackItalic.otf */; };
+		76E96B3B22DE4724000ED857 /* CircularStd-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76E96B3322DE4724000ED857 /* CircularStd-MediumItalic.otf */; };
+		76E96B3C22DE4724000ED857 /* CircularStd-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76E96B3422DE4724000ED857 /* CircularStd-BoldItalic.otf */; };
+		76E96B3D22DE4724000ED857 /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 76E96B3522DE4724000ED857 /* CircularStd-Medium.otf */; };
+		76E96B3F22DE4B89000ED857 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E96B3E22DE4B89000ED857 /* StyleGuide.swift */; };
+		76E96B4122DEA071000ED857 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E96B4022DEA071000ED857 /* CircleView.swift */; };
 		76F0D20722C29ECE00FB07FF /* ReservationSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0D20622C29ECE00FB07FF /* ReservationSummaryController.swift */; };
 		76F0D20C22C2F6C000FB07FF /* ReservationSuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0D20B22C2F6C000FB07FF /* ReservationSuccessController.swift */; };
 		76FBC3BC22BAEA67003FE54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */; };
@@ -62,6 +75,9 @@
 		763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailsController.swift; sourceTree = "<group>"; };
 		7636850022C19BC100A9DB98 /* DividerLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerLine.swift; sourceTree = "<group>"; };
 		7636850222C1E02900A9DB98 /* HouseAmenityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseAmenityCell.swift; sourceTree = "<group>"; };
+		76400AB722D5B8890071FACC /* RegistrationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationField.swift; sourceTree = "<group>"; };
+		76400AB922D5C4870071FACC /* RegistrationEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationEntry.swift; sourceTree = "<group>"; };
+		76400ABB22D6EA0B0071FACC /* RegistrationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationForm.swift; sourceTree = "<group>"; };
 		765D0CB122C9CA0200BA8283 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		765D0CB422C9CC8200BA8283 /* NewsPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPost.swift; sourceTree = "<group>"; };
 		765D0CB722C9D17900BA8283 /* NewsPostConfiguring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPostConfiguring.swift; sourceTree = "<group>"; };
@@ -81,6 +97,16 @@
 		76C430EE22C1FA5F00D47AC6 /* HousePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePhotoCell.swift; sourceTree = "<group>"; };
 		76C430F022C2873100D47AC6 /* RoomListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListController.swift; sourceTree = "<group>"; };
 		76C430F222C28AD000D47AC6 /* RoomListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListCell.swift; sourceTree = "<group>"; };
+		76E96B2E22DE4724000ED857 /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		76E96B2F22DE4724000ED857 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		76E96B3022DE4724000ED857 /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
+		76E96B3122DE4724000ED857 /* CircularStd-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BookItalic.otf"; sourceTree = "<group>"; };
+		76E96B3222DE4724000ED857 /* CircularStd-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BlackItalic.otf"; sourceTree = "<group>"; };
+		76E96B3322DE4724000ED857 /* CircularStd-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-MediumItalic.otf"; sourceTree = "<group>"; };
+		76E96B3422DE4724000ED857 /* CircularStd-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BoldItalic.otf"; sourceTree = "<group>"; };
+		76E96B3522DE4724000ED857 /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		76E96B3E22DE4B89000ED857 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		76E96B4022DEA071000ED857 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		76F0D20622C29ECE00FB07FF /* ReservationSummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationSummaryController.swift; sourceTree = "<group>"; };
 		76F0D20B22C2F6C000FB07FF /* ReservationSuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationSuccessController.swift; sourceTree = "<group>"; };
 		76FBC3B822BAEA67003FE54A /* Serendipia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serendipia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +153,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		76400AB622D5B8660071FACC /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				7627B8A722BD64B600DD75F0 /* RegistrationController.swift */,
+				76400AB922D5C4870071FACC /* RegistrationEntry.swift */,
+				76400AB722D5B8890071FACC /* RegistrationField.swift */,
+				76400ABB22D6EA0B0071FACC /* RegistrationForm.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		765D0CB322C9CB6100BA8283 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +195,13 @@
 			path = "Data Managers";
 			sourceTree = "<group>";
 		};
+		766D46FA22DF885400FDF81A /* CountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CountryPicker;
+			sourceTree = "<group>";
+		};
 		76705FDB22D2CD4900B4B018 /* Payments */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +221,21 @@
 				765D0CB422C9CC8200BA8283 /* NewsPost.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		76E96B2D22DE4724000ED857 /* Circular Font */ = {
+			isa = PBXGroup;
+			children = (
+				76E96B2E22DE4724000ED857 /* CircularStd-Book.otf */,
+				76E96B2F22DE4724000ED857 /* CircularStd-Black.otf */,
+				76E96B3022DE4724000ED857 /* CircularStd-Bold.otf */,
+				76E96B3122DE4724000ED857 /* CircularStd-BookItalic.otf */,
+				76E96B3222DE4724000ED857 /* CircularStd-BlackItalic.otf */,
+				76E96B3322DE4724000ED857 /* CircularStd-MediumItalic.otf */,
+				76E96B3422DE4724000ED857 /* CircularStd-BoldItalic.otf */,
+				76E96B3522DE4724000ED857 /* CircularStd-Medium.otf */,
+			);
+			path = "Circular Font";
 			sourceTree = "<group>";
 		};
 		76FBC3AF22BAEA67003FE54A = {
@@ -200,7 +259,9 @@
 		76FBC3BA22BAEA67003FE54A /* Serendipia */ = {
 			isa = PBXGroup;
 			children = (
+				76E96B2D22DE4724000ED857 /* Circular Font */,
 				768E4D8822BD5220009CE688 /* Extensions.swift */,
+				76E96B3E22DE4B89000ED857 /* StyleGuide.swift */,
 				76FBC3BB22BAEA67003FE54A /* AppDelegate.swift */,
 				76FBC3C122BAEA67003FE54A /* Main.storyboard */,
 				76FBC3C622BAEA6A003FE54A /* LaunchScreen.storyboard */,
@@ -210,7 +271,7 @@
 				768E4D8A22BD5CE7009CE688 /* UserManager.swift */,
 				766914FD22CD65CA00F7B68C /* Data Managers */,
 				76C1AB7222BECD8B00F4BDE3 /* Models */,
-				7627B8A722BD64B600DD75F0 /* RegistrationController.swift */,
+				76400AB622D5B8660071FACC /* Registration */,
 				7627B8A922BD66AC00DD75F0 /* HousesTabController.swift */,
 				76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */,
 				763684FE22C1991F00A9DB98 /* HouseDetailsController.swift */,
@@ -229,6 +290,8 @@
 				76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */,
 				7636850022C19BC100A9DB98 /* DividerLine.swift */,
 				7669150222CD7E3700F7B68C /* TestData.swift */,
+				76E96B4022DEA071000ED857 /* CircleView.swift */,
+				766D46FA22DF885400FDF81A /* CountryPicker */,
 			);
 			path = Serendipia;
 			sourceTree = "<group>";
@@ -295,8 +358,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FBC3C822BAEA6A003FE54A /* LaunchScreen.storyboard in Resources */,
+				76E96B3922DE4724000ED857 /* CircularStd-BookItalic.otf in Resources */,
+				76E96B3A22DE4724000ED857 /* CircularStd-BlackItalic.otf in Resources */,
+				76E96B3822DE4724000ED857 /* CircularStd-Bold.otf in Resources */,
+				76E96B3B22DE4724000ED857 /* CircularStd-MediumItalic.otf in Resources */,
+				76E96B3C22DE4724000ED857 /* CircularStd-BoldItalic.otf in Resources */,
 				76FBC3C522BAEA6A003FE54A /* Assets.xcassets in Resources */,
 				76FBC3C322BAEA67003FE54A /* Main.storyboard in Resources */,
+				76E96B3622DE4724000ED857 /* CircularStd-Book.otf in Resources */,
+				76E96B3722DE4724000ED857 /* CircularStd-Black.otf in Resources */,
+				76E96B3D22DE4724000ED857 /* CircularStd-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +401,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 			);
@@ -337,6 +409,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 			);
@@ -367,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E96B3F22DE4B89000ED857 /* StyleGuide.swift in Sources */,
 				76C1AB7122BECD8100F4BDE3 /* House.swift in Sources */,
 				7627B8AC22BD66C400DD75F0 /* NewsTabController.swift in Sources */,
 				76C430F322C28AD000D47AC6 /* RoomListCell.swift in Sources */,
@@ -378,12 +452,14 @@
 				763684FF22C1991F00A9DB98 /* HouseDetailsController.swift in Sources */,
 				766914FF22CD65DE00F7B68C /* NewsPostDataManager.swift in Sources */,
 				7607AA4622BFE98600E2CC93 /* MapViewCell.swift in Sources */,
+				76E96B4122DEA071000ED857 /* CircleView.swift in Sources */,
 				76705FDA22D2C9CD00B4B018 /* PaymentFormPickerController.swift in Sources */,
 				76FBC3D022BAF0B0003FE54A /* LogInController.swift in Sources */,
 				76FD44D922C9C46F00AA352F /* NewsCommentBoxCell.swift in Sources */,
 				768E4D8922BD5220009CE688 /* Extensions.swift in Sources */,
 				765D0CB522C9CC8200BA8283 /* NewsPost.swift in Sources */,
 				7669150522CDCF0D00F7B68C /* FilterController.swift in Sources */,
+				76400ABA22D5C4870071FACC /* RegistrationEntry.swift in Sources */,
 				76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */,
 				76FD44D522C9C44400AA352F /* NewsLikeAndCommentCountCell.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
@@ -394,9 +470,11 @@
 				7627B8AE22BD66D100DD75F0 /* DoorKeyTabController.swift in Sources */,
 				76F0D20722C29ECE00FB07FF /* ReservationSummaryController.swift in Sources */,
 				7627B8A822BD64B600DD75F0 /* RegistrationController.swift in Sources */,
+				76400AB822D5B8890071FACC /* RegistrationField.swift in Sources */,
 				76C430F122C2873100D47AC6 /* RoomListController.swift in Sources */,
 				76FD44D322C9C41B00AA352F /* NewsUserAndBodyCell.swift in Sources */,
 				768E4D8D22BD5D17009CE688 /* User.swift in Sources */,
+				76400ABC22D6EA0B0071FACC /* RegistrationForm.swift in Sources */,
 				765D0CB222C9CA0200BA8283 /* Comment.swift in Sources */,
 				7627B8AA22BD66AC00DD75F0 /* HousesTabController.swift in Sources */,
 				76C1AB6D22BE99C100F4BDE3 /* DateExtensions.swift in Sources */,

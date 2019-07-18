@@ -10,4 +10,5 @@ target 'Serendipia' do
 	pod 'PureLayout'
 	pod 'Alamofire'
 	pod 'AlamofireImage'
+	pod 'CountryPickerView'
 end
