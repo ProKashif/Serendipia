@@ -8,6 +8,9 @@
 
 import UIKit
 
-class ProfileTabController: UIViewController {
-	
+class ProfileTabController: UIViewController, Refreshable {
+	func refresh() {
+		
+	}
+
 }

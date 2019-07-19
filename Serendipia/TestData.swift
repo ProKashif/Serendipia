@@ -101,8 +101,7 @@ class TestPosts {
 			], likes: [
 				TestUsers.randomUser(),
 				TestUsers.randomUser()
-			]),
-		
+			])
 		]
 }
 
@@ -127,5 +126,15 @@ class TestPayments {
 	let testPayments = [
 		Payment(type: .paypal, title: "PayPal", color: .paypalBlue),
 		Payment(type: .creditCard, title: "Credit Card", color: .darkishPink),
+	]
+}
+
+
+class TestLogins {
+	let testLoginOptions = [
+		LoginOption(backgroundColor: .facebookBlue, option: .facebook, icon: UIImage(named: "facebookLoginIcon")),
+		LoginOption(backgroundColor: .googleRed, option: .google, icon: UIImage(named: "googleLoginIcon")),
+		LoginOption(backgroundColor: .twitterBlue, option: .twitter, icon: UIImage(named: "twitterLoginIcon")),
+		LoginOption(backgroundColor: .serendipiaPink, option: .serendipia, icon: UIImage(named: "serendipiaLoginIcon"))
 	]
 }

@@ -8,14 +8,27 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
+protocol Refreshable {
+	func refresh()
+}
+
+class MainTabBarController: UITabBarController, UserManagerObserver {
+	func userDidLogIn() {
+		if let refreshable = selectedViewController as? Refreshable {
+			refreshable.refresh()
+		}
+	}
+	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		
+		UserManager.shared.addObserver(self, forKeyPath: "loggedInUser", options: [], context: nil)
+		
 		if UserManager.shared.loggedInUser == nil {
-			if let logIn = storyboard?.instantiateViewController(withIdentifier: "logIn") {
+			if let logIn = storyboard?.instantiateViewController(withIdentifier: "login") {
 				present(logIn, animated: true, completion: nil)
 			}
 		}
 	}
 }
+

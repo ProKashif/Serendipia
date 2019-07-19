@@ -120,6 +120,32 @@ import AlamofireImage
             self.layer.rasterizationScale = UIScreen.main.scale
         }
     }
+	
+	@IBInspectable var startColor: UIColor = .clear
+	
+	@IBInspectable var endColor: UIColor = .clear
+	
+	@IBInspectable var startPoint: CGPoint = .zero
+	
+	@IBInspectable var endPoint: CGPoint = .zero
+	
+	override open class var layerClass: AnyClass {
+		return CAGradientLayer.classForCoder()
+	}
+	
+	func setup(colors: [CGColor], startPoint: CGPoint, endPoint: CGPoint) {
+		let gradientLayer = layer as! CAGradientLayer
+		gradientLayer.colors = colors
+		gradientLayer.startPoint = startPoint
+		gradientLayer.endPoint = endPoint
+	}
+
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		
+		setup(colors: [startColor.cgColor, endColor.cgColor], startPoint: startPoint, endPoint: endPoint)
+	}
+
 }
 
 
@@ -141,6 +167,9 @@ extension UIViewController {
 		dismiss(animated: true, completion: nil)
 	}
 	
+	@IBAction func pop() {
+		navigationController?.popViewController(animated: true)
+	}
 }
 
 
@@ -230,6 +259,22 @@ extension UIColor {
 		return UIColor(red: 68.0 / 255.0, green: 105.0 / 255.0, blue: 176.0 / 255.0, alpha: 1.0)
 	}
 	
+	@nonobjc class var facebookBlue: UIColor {
+		return UIColor(red: 68.0 / 255.0, green: 105.0 / 255.0, blue: 176.0 / 255.0, alpha: 1.0)
+	}
+
+	@nonobjc class var googleRed: UIColor {
+		return UIColor(red: 241 / 255.0, green: 67 / 255.0, blue: 54 / 255.0, alpha: 1.0)
+	}
+	
+	@nonobjc class var twitterBlue: UIColor {
+		return UIColor(red: 3 / 255.0, green: 169 / 255.0, blue: 244 / 255.0, alpha: 1.0)
+	}
+
+	@nonobjc class var serendipiaPink: UIColor {
+		return UIColor(red: 237 / 255.0, green: 45 / 255.0, blue: 141 / 255.0, alpha: 1.0)
+	}
+
 	@nonobjc class var dustyOrange: UIColor {
 		return UIColor(red: 241.0 / 255.0, green: 122.0 / 255.0, blue: 54.0 / 255.0, alpha: 1.0)
 	}
@@ -369,4 +414,124 @@ public extension UIViewController
 						self.view.layoutIfNeeded()
 		}, completion: nil)
 	}
+}
+
+@IBDesignable
+class DesignableTableView: UITableView {
+	// Rounded corner raius
+	@IBInspectable var cornerRadius: CGFloat {
+		get {
+			return self.layer.cornerRadius
+		}
+		set {
+			self.layer.cornerRadius = newValue
+		}
+	}
+	
+	// Shadow color
+	@IBInspectable var shadowColor: UIColor {
+		get {
+			return UIColor(cgColor: self.layer.shadowColor!)
+		}
+		set {
+			self.layer.shadowColor = newValue.cgColor
+		}
+	}
+	
+	// Shadow offsets
+	@IBInspectable var shadowOffset: CGSize {
+		get {
+			return self.layer.shadowOffset
+		}
+		set {
+			self.layer.shadowOffset = newValue
+		}
+	}
+	
+	// Shadow opacity
+	@IBInspectable var shadowOpacity: Float {
+		get {
+			return self.layer.shadowOpacity
+		}
+		set {
+			self.layer.shadowOpacity = newValue
+		}
+	}
+	
+	// Shadow radius
+	@IBInspectable var shadowRadius: CGFloat {
+		get {
+			return self.layer.shadowRadius
+		}
+		set {
+			self.layer.shadowRadius = newValue
+		}
+	}
+	
+	// Border width
+	@IBInspectable var borderWidth: CGFloat {
+		get {
+			return self.layer.borderWidth
+		}
+		set {
+			self.layer.borderWidth = newValue
+		}
+	}
+	
+	// Border color
+	@IBInspectable var borderColor: UIColor {
+		get {
+			return UIColor(cgColor: self.layer.borderColor!)
+		}
+		set {
+			self.layer.borderColor = newValue.cgColor
+		}
+	}
+	
+	// Background color
+	@IBInspectable var layerBackgroundColor: UIColor {
+		get {
+			return UIColor(cgColor: self.layer.backgroundColor!)
+		}
+		set {
+			self.backgroundColor = nil
+			self.layer.backgroundColor = newValue.cgColor
+		}
+	}
+	
+	// Create bezier path of shadow for rasterize
+	@IBInspectable var enableBezierPath: Bool {
+		get {
+			return self.layer.shadowPath != nil
+		}
+		set {
+			if enableBezierPath {
+				self.layer.shadowPath = UIBezierPath(roundedRect: self.layer.bounds, cornerRadius: self.layer.cornerRadius).cgPath
+			} else {
+				self.layer.shadowPath = nil
+			}
+		}
+	}
+	
+	// Mask to bounds controll
+	@IBInspectable var maskToBounds: Bool {
+		get{
+			return self.layer.masksToBounds
+		}
+		set {
+			self.layer.masksToBounds = newValue
+		}
+	}
+	
+	// Rasterize option
+	@IBInspectable var rasterize: Bool {
+		get {
+			return self.layer.shouldRasterize
+		}
+		set {
+			self.layer.shouldRasterize = newValue
+			self.layer.rasterizationScale = UIScreen.main.scale
+		}
+	}
+
 }

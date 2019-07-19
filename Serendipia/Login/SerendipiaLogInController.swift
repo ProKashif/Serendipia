@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LogInController: UIViewController {
+class SerendipiaLogInController: UIViewController {
 	@IBOutlet weak var usernameField: UITextField!
 	@IBOutlet weak var passwordField: UITextField!
 	

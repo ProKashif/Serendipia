@@ -11,11 +11,14 @@ import UIKit
 let addingAnimation = UITableView.RowAnimation.bottom
 let removingAnimation = UITableView.RowAnimation.top
 
-class NewsTabController: UIViewController {
+class NewsTabController: UIViewController, Refreshable {
 	@IBOutlet weak var tableView: UITableView!
-	
 	private var expandedSectionIndices = [Int]()
 	private var posts = TestPosts().testPosts
+	
+	func refresh() {
+		tableView.reloadData()
+	}
 }
 
 

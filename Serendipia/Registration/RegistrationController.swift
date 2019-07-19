@@ -18,7 +18,9 @@ class RegistrationController: UIViewController {
 	@objc
 	private func saveProfile() {
 		//DO SAVING STUFF
-		dismiss()
+		dismiss(animated: true) {
+			UserManager.shared.loggedInUser = TestUsers.jLo()
+		}
 	}
 	
 	func pickProfilePic() {

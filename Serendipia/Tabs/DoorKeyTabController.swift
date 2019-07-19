@@ -8,6 +8,10 @@
 
 import UIKit
 
-class DoorKeyTabController: UIViewController {
+class DoorKeyTabController: UIViewController, Refreshable {
+	func refresh() {
+		//refetch keys for user
+	}
+	
 	
 }

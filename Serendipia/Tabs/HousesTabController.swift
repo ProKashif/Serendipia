@@ -16,7 +16,7 @@ protocol ReservationBuilding {
 let darkPink = UIColor(red: 0.855, green: 0.255, blue: 0.545, alpha: 1.0)
 let lightPink = UIColor(red: 0.96, green: 0.74, blue: 0.859, alpha: 1.0)
 
-class HousesTabController: UIViewController {
+class HousesTabController: UIViewController {	
 	private lazy var calendar: FSCalendar = {
 		return (storyboard?.instantiateViewController(withIdentifier: "calendar").view.subviews.first as? FSCalendar) ?? FSCalendar()
 	}()
