@@ -13,6 +13,7 @@ protocol Refreshable {
 }
 
 class MainTabBarController: UITabBarController, UserManagerObserver {
+    private let loggedInUserKey = "loggedInUser"
 	func userDidLogIn() {
 		if let refreshable = selectedViewController as? Refreshable {
 			refreshable.refresh()
@@ -22,7 +23,7 @@ class MainTabBarController: UITabBarController, UserManagerObserver {
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		
-		UserManager.shared.addObserver(self, forKeyPath: "loggedInUser", options: [], context: nil)
+		UserManager.shared.addObserver(self, forKeyPath: loggedInUserKey, options: [], context: nil)
 		
 		if UserManager.shared.loggedInUser == nil {
 			if let logIn = storyboard?.instantiateViewController(withIdentifier: "login") {
@@ -30,5 +31,23 @@ class MainTabBarController: UITabBarController, UserManagerObserver {
 			}
 		}
 	}
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        UserManager.shared.removeObserver(self, forKeyPath: loggedInUserKey)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        guard
+            keyPath == loggedInUserKey,
+            let viewControllers = viewControllers
+        else { return }
+        
+        for vc in viewControllers {
+            if let refreshableVC = vc as? Refreshable {
+                refreshableVC.refresh()
+            }
+        }
+    }
+    
 }
 

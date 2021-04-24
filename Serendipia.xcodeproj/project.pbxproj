@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,7 +34,6 @@
 		768E4D8B22BD5CE7009CE688 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8A22BD5CE7009CE688 /* UserManager.swift */; };
 		768E4D8D22BD5D17009CE688 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E4D8C22BD5D17009CE688 /* User.swift */; };
 		76BC3E3522E0ED25003A9DA8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC3E3422E0ED25003A9DA8 /* LoginController.swift */; };
-		76BC3E3822E0F7C5003A9DA8 /* LoginOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC3E3722E0F7C5003A9DA8 /* LoginOptionCell.swift */; };
 		76C1AB6D22BE99C100F4BDE3 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */; };
 		76C1AB6F22BECCFA00F4BDE3 /* HouseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */; };
 		76C1AB7122BECD8100F4BDE3 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C1AB7022BECD8100F4BDE3 /* House.swift */; };
@@ -63,6 +62,7 @@
 		76FD44D522C9C44400AA352F /* NewsLikeAndCommentCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD44D422C9C44400AA352F /* NewsLikeAndCommentCountCell.swift */; };
 		76FD44D722C9C45700AA352F /* NewsCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD44D622C9C45700AA352F /* NewsCommentCell.swift */; };
 		76FD44D922C9C46F00AA352F /* NewsCommentBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FD44D822C9C46F00AA352F /* NewsCommentBoxCell.swift */; };
+		F3DB1A1523FD0DA70026BD16 /* LoginOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB1A1423FD0DA70026BD16 /* LoginOptionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,7 +93,6 @@
 		768E4D8A22BD5CE7009CE688 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		768E4D8C22BD5D17009CE688 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		76BC3E3422E0ED25003A9DA8 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		76BC3E3722E0F7C5003A9DA8 /* LoginOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginOptionCell.swift; path = /Users/martyulrich/Repos/Serendipia/Serendipia/Login/LoginOptionCell.swift; sourceTree = "<absolute>"; };
 		76C1AB6C22BE99C100F4BDE3 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		76C1AB6E22BECCFA00F4BDE3 /* HouseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListController.swift; sourceTree = "<group>"; };
 		76C1AB7022BECD8100F4BDE3 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
@@ -126,6 +125,7 @@
 		76FD44D822C9C46F00AA352F /* NewsCommentBoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCommentBoxCell.swift; sourceTree = "<group>"; };
 		A432A442BCAFC4E717C19388 /* Pods_Serendipia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Serendipia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36ACE94F28A494348CAF581 /* Pods-Serendipia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Serendipia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia.debug.xcconfig"; sourceTree = "<group>"; };
+		F3DB1A1423FD0DA70026BD16 /* LoginOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOptionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,13 +200,6 @@
 			path = "Data Managers";
 			sourceTree = "<group>";
 		};
-		766D46FA22DF885400FDF81A /* CountryPicker */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CountryPicker;
-			sourceTree = "<group>";
-		};
 		76705FDB22D2CD4900B4B018 /* Payments */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +215,7 @@
 			children = (
 				76FBC3CF22BAF0B0003FE54A /* SerendipiaLogInController.swift */,
 				76BC3E3422E0ED25003A9DA8 /* LoginController.swift */,
-				76BC3E3722E0F7C5003A9DA8 /* LoginOptionCell.swift */,
+				F3DB1A1423FD0DA70026BD16 /* LoginOptionCell.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -305,7 +298,6 @@
 				7636850022C19BC100A9DB98 /* DividerLine.swift */,
 				7669150222CD7E3700F7B68C /* TestData.swift */,
 				76E96B4022DEA071000ED857 /* CircleView.swift */,
-				766D46FA22DF885400FDF81A /* CountryPicker */,
 			);
 			path = Serendipia;
 			sourceTree = "<group>";
@@ -322,7 +314,6 @@
 				76FBC3B522BAEA67003FE54A /* Frameworks */,
 				76FBC3B622BAEA67003FE54A /* Resources */,
 				2E7CC13B932BE99C9D3ACEBF /* [CP] Embed Pods Frameworks */,
-				D131368CC7C24418C7B0A7BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -411,40 +402,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
-				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Serendipia/Pods-Serendipia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Serendipia/Pods-Serendipia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D131368CC7C24418C7B0A7BC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Serendipia/Pods-Serendipia-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Serendipia/Pods-Serendipia-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -476,6 +443,7 @@
 				76BC3E3522E0ED25003A9DA8 /* LoginController.swift in Sources */,
 				76400ABA22D5C4870071FACC /* RegistrationEntry.swift in Sources */,
 				76C1AB7422BED4AA00F4BDE3 /* HouseListCell.swift in Sources */,
+				F3DB1A1523FD0DA70026BD16 /* LoginOptionCell.swift in Sources */,
 				76FD44D522C9C44400AA352F /* NewsLikeAndCommentCountCell.swift in Sources */,
 				7627B8B222BD6B2500DD75F0 /* MainTabBarController.swift in Sources */,
 				76F0D20C22C2F6C000FB07FF /* ReservationSuccessController.swift in Sources */,
@@ -488,7 +456,6 @@
 				76400AB822D5B8890071FACC /* RegistrationField.swift in Sources */,
 				76C430F122C2873100D47AC6 /* RoomListController.swift in Sources */,
 				76FD44D322C9C41B00AA352F /* NewsUserAndBodyCell.swift in Sources */,
-				76BC3E3822E0F7C5003A9DA8 /* LoginOptionCell.swift in Sources */,
 				768E4D8D22BD5D17009CE688 /* User.swift in Sources */,
 				76400ABC22D6EA0B0071FACC /* RegistrationForm.swift in Sources */,
 				765D0CB222C9CA0200BA8283 /* Comment.swift in Sources */,
@@ -645,7 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S2X9VNR2UC;
+				DEVELOPMENT_TEAM = 6277PK928C;
 				INFOPLIST_FILE = Serendipia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -664,7 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S2X9VNR2UC;
+				DEVELOPMENT_TEAM = 6277PK928C;
 				INFOPLIST_FILE = Serendipia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

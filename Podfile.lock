@@ -13,6 +13,14 @@ DEPENDENCIES:
   - FSCalendar
   - PureLayout
 
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - CountryPickerView
+    - FSCalendar
+    - PureLayout
+
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
@@ -22,4 +30,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 6885944b548587b34da5c28784e32782a46f0a1d
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.8.4
